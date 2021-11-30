@@ -1,0 +1,14 @@
+.navbar-mobile-menu {
+    max-height: 0;
+    transition: max-height .3s ease-out;
+    overflow: hidden;
+}
+
+.open {
+    display: block
+}
+
+.navbar-mobile-menu.open {
+    max-height: 500px;
+    transition: max-height .5s ease-in;
+}
