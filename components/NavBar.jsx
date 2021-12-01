@@ -22,7 +22,6 @@ class NavBar extends Component {
     }
 
     render() {
-        console.log(navStyles);
         return (
             <nav className="bg-lime shadow rounded-b-lg md:rounded-none">
                 <div className="mx-2 flex justify-between py-1">
@@ -40,7 +39,7 @@ class NavBar extends Component {
                     <div>
                         <div className="hidden md:flex items-center font-bold text-white space-x-2 my-2">
                             {
-                                navLinks.map( ({ title, href }, idx) => (
+                                this.props.links.map( ({ title, href }, idx) => (
                                     <Link key={idx} href={href}>
                                         <a className={`mx-2 px-3 py-2 border-2 hover:text-gray-900 hover:border-gray-900 ${this.props.router.route === href ? 'border-2 hover:border-gray-900' : 'border-transparent hover:border-2'}`}>
                                             {title}
@@ -65,7 +64,7 @@ class NavBar extends Component {
                     <div className="px-2 py-2">
                         <hr className="mb-4" />
                         {
-                            navLinks.map( ({ title, href }, idx) => (
+                            this.props.links.map( ({ title, href }, idx) => (
                                 <Link key={idx} href={href}>
                                     <a className={`block my-1 font-bold pl-3 py-3 rounded w-full hover:text-gray-50 hover:bg-gray-900 ${ this.props.router.route === href ? 'bg-green-50 text-gray-900' : 'text-gray-50' }`}>
                                         {title}
@@ -79,15 +78,5 @@ class NavBar extends Component {
         )
     }
 }
-
-const navLinks = [
-    { title: 'Team', href: '/team' },
-    { title: 'Gallery', href: '/gallery' },
-    { title: 'Sponsors', href: '/sponsors' },
-    { title: 'FAQ', href: '/faq' },
-    { title: 'Contact', href: '/contact' },
-    { title: 'Apply', href: '/apply' },
-];
-
 
 export default withRouter(NavBar);
