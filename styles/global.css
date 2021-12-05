@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    --pale-pink: #e6a195;
+    --weird-gray: #f7f6f4;
+    --odd-green: #8fb0a9;
+}
+
 main {
     min-height: 70vh;
+}
+
+body {
+    background-color: #f7f6f4;
+    width: 100%;
 }
