@@ -5,7 +5,6 @@ import { links } from './routes';
 import socials from './socials';
 
 export default function Layout({ children }) {
-    console.log(socials);
     return (
         <>
             <Head>
