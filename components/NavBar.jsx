@@ -23,7 +23,7 @@ class NavBar extends Component {
 
     render() {
         return (
-            <nav className="bg-lime shadow rounded-b-lg md:rounded-none">
+            <nav className="bg-odd-green shadow rounded-b-lg md:rounded-none">
                 <div className="mx-2 flex justify-between py-1">
                     <div className="grid place-items-center">
                         <Link href="/">
