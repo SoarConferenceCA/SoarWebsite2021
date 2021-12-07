@@ -2,7 +2,6 @@ import { Component, createRef } from 'react';
 import { withRouter } from 'next/router';
 import Link from 'next/link';
 import navStyles from '../styles/navbar.module.css';
-import { sleep } from '../scripts/utils';
 
 class NavBar extends Component {
     constructor(props) {
