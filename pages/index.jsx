@@ -72,9 +72,6 @@ export default function Index() {
                 {/* Slider Here */}
             </div>
 
-
-            
-
             <div className="w-full">
 
                 <div className="px-4 grid grid-cols-1 md:grid-cols-2">
