@@ -2,23 +2,20 @@ import { Component, createRef } from 'react';
 import { withRouter } from 'next/router';
 import Link from 'next/link';
 import navStyles from '../styles/navbar.module.css';
+import { sleep } from '../scripts/utils';
 
 class NavBar extends Component {
     constructor(props) {
         super(props);
-        this.btn = createRef();
         this.menu = createRef();
     }
 
-    listener = (ev) => {
+    handleTransition = (ev) => {
         console.log('transitioned');
     };
 
-    componentDidMount() {
-        this.menu.current.addEventListener('transitioned', this.listener);
-        this.btn.current.addEventListener('click', (ev) => {
-            this.menu.current.classList.toggle(navStyles.open);
-        })
+    toggleDropDown = async (wait) => {
+        this.menu.current.classList.toggle(navStyles.open);
     }
 
     render() {
@@ -52,7 +49,7 @@ class NavBar extends Component {
 
                     
                     <div className="flex items-center md:hidden">
-                        <button ref={this.btn} className="p-1 rounded text-gray-900 border-transparent border-2 hover:border-white hover:text-white">
+                        <button onClick={this.toggleDropDown} className="p-1 rounded text-gray-900 border-transparent border-2 hover:border-white hover:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
@@ -60,13 +57,13 @@ class NavBar extends Component {
                     </div>
                 </div>
 
-                <div ref={this.menu} className={`shadow-lg rounded-b-lg ${navStyles['navbar-mobile-menu']} md:hidden`}>
+                <div ref={this.menu} onTransitionEnd={this.handleTransition} className={`shadow-lg rounded-b-lg ${navStyles['navbar-mobile-menu']} md:hidden`}>
                     <div className="px-2 py-2">
                         <hr className="mb-4" />
                         {
                             this.props.links.map( ({ title, href }, idx) => (
                                 <Link key={idx} href={href}>
-                                    <a className={`block my-1 font-bold pl-3 py-3 rounded w-full hover:text-gray-50 hover:bg-gray-900 ${ this.props.router.route === href ? 'bg-green-50 text-gray-900' : 'text-gray-50' }`}>
+                                    <a onClick={this.toggleDropDown} className={`block my-1 font-bold pl-3 py-3 rounded w-full hover:text-gray-50 hover:bg-gray-900 ${ this.props.router.route === href ? 'bg-green-50 text-gray-900' : 'text-gray-50' }`}>
                                         {title}
                                     </a>
                                 </Link>

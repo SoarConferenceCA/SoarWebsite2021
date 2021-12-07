@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer({ links, socials }) {
     return (
@@ -94,7 +92,7 @@ export default function Footer({ links, socials }) {
                                 links.map( ({ title, href }, idx) => (
                                     <div key={idx} className="my-2">
                                         <Link href={href}>
-                                            <a>{title}</a>
+                                            <a target="_blank">{title}</a>
                                         </Link>
                                     </div>
                                 ))
