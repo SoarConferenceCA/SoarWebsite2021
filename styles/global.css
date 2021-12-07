@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
-    --pale-pink: #e6a195;
-    --weird-gray: #f7f6f4;
+    --pale-pink: #dd7766;
+    --weird-gray: #e5e5e5;
     --odd-green: #8fb0a9;
 }
 
@@ -13,6 +13,6 @@ main {
 }
 
 body {
-    background-color: #f7f6f4;
+    background-color: var(--weird-gray);
     width: 100%;
 }
