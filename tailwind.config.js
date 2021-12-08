@@ -16,6 +16,7 @@ module.exports = {
       },
       width: {
         'w360': '360px',
+        'w110per': '110%'
       },
       height: {
         'ab10': '480px',
