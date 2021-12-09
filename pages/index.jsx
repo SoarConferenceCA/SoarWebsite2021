@@ -1,4 +1,6 @@
 import indexStyles from '../styles/index.module.css';
+import Link from 'next/link';
+import GalleryPreview from '../components/GalleryPreview';
 
 export default function Index() {
     return (
@@ -64,12 +66,14 @@ export default function Index() {
                         </h2>
 
                         <button className="mt-6 sm:mt-auto p-2 bg-transparent hover:bg-gray-50 text-pale-pink font-bold text-lg border-2 border-pale-pink hover:border-red-600">
-                            View All Photos
+                            <Link href="/gallery">
+                                View All Photos
+                            </Link>
                         </button>
                     </div>
                 </div>
 
-                {/* Slider Here */}
+                <GalleryPreview />
             </div>
 
             <div className="w-full mb-24">
