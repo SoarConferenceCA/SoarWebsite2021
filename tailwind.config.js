@@ -30,6 +30,13 @@ module.exports = {
       maxWidth: {
         'w370': '370px',
         'w280': '280px'
+      },
+      maxHeight: {
+        'h320': '240px',
+        'h440': '300px'
+      },
+      inset: {
+        '35': '35px'
       }
     },
   },
