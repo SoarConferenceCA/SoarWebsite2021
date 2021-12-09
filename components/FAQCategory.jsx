@@ -66,7 +66,7 @@ export default function FAQCategory({ category }) {
                     </div>
 
                     <div className="hidden md:block relative w-full -ml-100">
-                        <div style={{width: '25px'}} className="absolute right-0 h-full bg-pale-pink rounded-l-lg"></div>
+                        <div style={{width: '25px'}} className="absolute right-0 h-full max-h-ab4 bg-pale-pink rounded-l-lg"></div>
                     </div>
                 </div>
                 

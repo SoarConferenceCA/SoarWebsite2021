@@ -72,7 +72,7 @@ export default function Index() {
                 {/* Slider Here */}
             </div>
 
-            <div className="w-full">
+            <div className="w-full mb-24">
 
                 <div className="px-4 grid grid-cols-1 md:grid-cols-2">
                     <div>
@@ -111,22 +111,25 @@ export default function Index() {
                         </div>
                     </div>
 
-                    <div className="w-full h-full px-4 flex">
-                        <div className="relative w-full h-full">
-                            <div className="absolute w-10/12 h-2/3 top-0 right-0 bg-odd-green" />
-                        </div>
+                    <div className="max-h-full md:max-h-h440 lg:max-h-full w-full">
+                        <div className="w-full h-full px-4 flex">
+                            <div className="relative w-full h-full">
+                                <div className="absolute w-10/12 h-2/3 max-h-h320 top-35 right-0 bg-odd-green" />
+                            </div>
 
-                        <div className="relative w-full h-full -ml-100">
-                            <svg width="100%" height="100%" viewBox="0 0 441 353" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M-1 97.5L157.5 1L285.5 217L432.5 119" stroke="#8FB0A9"/>
-                                <path d="M0 139L146.5 55L276.5 281L440 159.5" stroke="#DD7766" stroke-opacity="0.6"/>
-                                <path d="M0 180L132.5 103L259.5 352L440 213.5" stroke="#DD7766" stroke-opacity="0.4"/>
-                            </svg>
-                        </div>
+                            <div className="relative w-full h-full -ml-100">
+                                <svg width="100%" height="100%" viewBox="0 0 441 353" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M-1 97.5L157.5 1L285.5 217L432.5 119" stroke="#8FB5Af"/>
+                                    <path d="M0 139L146.5 55L276.5 281L440 159.5" stroke="#DD7766" strokeOpacity="0.6"/>
+                                    <path d="M0 180L132.5 103L259.5 352L440 213.5" stroke="#DD7766" strokeOpacity="0.4"/>
+                                </svg>
+                            </div>
 
-                        <div className="relative w-full h-full -ml-100">
-                            <div className="w-4/5 h-4/5 absolute bottom-0 left-0">
-                                <img src="/assets/unknown.png" />
+                            <div className="relative w-full h-full -ml-100">
+                                {/* <img src="/assets/unknown.png" alt="" className="block max-w-4/5 max-h-4/5 absolute bottom-0 left-0" /> */}
+                                <div className="w-4/5 h-4/5 absolute bottom-0 left-0">
+                                    <img src="/assets/unknown.png" className="absolute bottom-0 left-0" />
+                                </div>
                             </div>
                         </div>
                     </div>
