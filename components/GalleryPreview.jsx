@@ -1,9 +1,8 @@
 import useEmblaCarousel from "embla-carousel-react"
 import AutoPlay from "embla-carousel-autoplay";
 import { useCallback, useEffect, useState } from "react";
-import { preview } from "../data/gallerydata";
 
-export default function GalleryPreview() {
+export default function GalleryPreview({ previews }) {
     const [ emblaRef, emblaApi ] = useEmblaCarousel({ loop: true, skipSnaps: false}, [AutoPlay( { delay: 4000 } )])
     const [ selectedIndex, setSelectedIndex ] = useState(0);
     const [ scrollSnaps, setScrollSnaps ] = useState([]);
@@ -49,7 +48,7 @@ export default function GalleryPreview() {
                 <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex">
                         {
-                            preview.map( (photo, idx) => (
+                            previews.map( (photo, idx) => (
                                 <div key={idx} className="relative flex flex-none w-full mx-10">
                                     <img src={photo} className="max-w-full max-h-full" />
                                 </div>

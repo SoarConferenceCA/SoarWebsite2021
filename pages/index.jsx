@@ -1,6 +1,7 @@
 import indexStyles from '../styles/index.module.css';
 import Link from 'next/link';
 import GalleryPreview from '../components/GalleryPreview';
+import { preview } from "../data/gallerydata";
 
 export default function Index() {
     return (
@@ -73,7 +74,7 @@ export default function Index() {
                     </div>
                 </div>
 
-                <GalleryPreview />
+                <GalleryPreview previews={preview} />
             </div>
 
             <div className="w-full mb-24">
