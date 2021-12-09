@@ -15,7 +15,7 @@ function chunkArray(array, chunkSize) {
 export default function GalleryYear({ chunkSize, year }) {
     const [ emblaRef, emblaApi ] = useEmblaCarousel({ loop: true, skipSnaps: false });
     const [ selectedIndex, setSelectedIndex ] = useState(0);
-    const [ scrollSnaps, setScrollSnaps ] = useState([...Array(Math.ceil(year.photos.length / chunkSize))]);
+    const [ scrollSnaps, setScrollSnaps ] = useState([]);
     
     const scrollTo = useCallback( (idx) => emblaApi && emblaApi.scrollTo(idx), [emblaApi]);
     
