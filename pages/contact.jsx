@@ -31,7 +31,7 @@ export default function Contact() {
                                     chairContacts.map( (chair, idx) => (
                                         <div key={idx} className="m-4 group text-gray-600 cursor-text">
                                             <div className="flex items-center">
-                                                <span style={{width: '24px', height: '24px'}} className="inline-block rounded-full bg-pale-pink"></span>
+                                                <span style={{width: '24px', height: '24px'}} className="inline-block rounded-full bg-primary-dull"></span>
 
                                                 <span className="mx-4 text-lg">
                                                     {chair.name}: {chair.email}
@@ -51,7 +51,7 @@ export default function Contact() {
                                     Prefer to interact with a name and a face? Feel free to reach out personally to any of our team members.
                                 </p>
 
-                                <button className="mt-4 px-2 py-3 text-pale-pink font-bold hover:text-red-500 border-2 border-pale-pink hover:border-red-500">
+                                <button className="mt-4 px-2 py-3 text-primary-dull font-bold hover:text-red-500 border-2 border-primary-dull hover:border-red-500">
                                     <Link href="/team">
                                         Meet the Team
                                     </Link>
@@ -70,9 +70,9 @@ export default function Contact() {
                                 links.map( ({ href, icon }, idx) => (
                                     <div className="m-4" key={idx}>
                                         <Link href={href}>
-                                            <a className="align-middle group text-gray-600 hover:text-pale-pink" target="_blank">
+                                            <a className="align-middle group text-gray-600 hover:text-primary hover:font-bold" target="_blank">
                                                 <div className="flex items-center">
-                                                    <span style={{width: '24px', height: '24px'}} className="inline-block rounded-full bg-odd-green group-hover:bg-pale-pink"></span>
+                                                    <span style={{width: '24px', height: '24px'}} className="inline-block rounded-full bg-accent group-hover:bg-primary"></span>
 
                                                     <span className="inline-block align-middle mx-4 text-lg">
                                                         {href}

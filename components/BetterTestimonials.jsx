@@ -42,15 +42,11 @@ export default function BetterTestimonials({ testimonials }) {
                         testimonials.map( (testimonial, idx) => (
                             <div key={idx} className="w-full h-full flex-none grid grid-cols-1 md:grid-cols-2 space-x-8">
                                 <div className="w-full">
-                                    <div className="w-full h-full flex">
-                                        <BehindImageThing direction="left" />
-
-                                        <div className="relative w-full h-full -ml-100">
-                                            <div className="w-4/5 h-4/5 absolute bottom-0 right-0">
-                                                <img src={testimonial.image} className="max-w-full max-h-full" />
-                                            </div>
+                                    <BehindImageThing direction="left">
+                                        <div className="w-4/5 h-4/5 absolute bottom-0 right-0">
+                                            <img src={testimonial.image} className="max-w-full max-h-full" />
                                         </div>
-                                    </div>
+                                    </BehindImageThing>
                                 </div>
 
                                 <div className="w-full h-full">

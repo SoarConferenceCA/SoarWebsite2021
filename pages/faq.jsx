@@ -1,17 +1,6 @@
-import { Component } from 'react';
-import Collapsible from "react-collapsible";
 import FAQCategory from '../components/FAQCategory';
 import { faqCategories } from '../data/faqs';
 
-const trigger = (
-    <div className="bg-pale-pink mt-8 flex justify-center">
-        <span style={{width: '24px', height: '24px'}} className="bg-pale-pink"></span>
-
-        <span>Some Text</span>
-        
-        <span style={{width: '24px', height: '24px'}} className="bg-pale-pink"></span>
-    </div>
-)
 
 export default function FAQ() {
     return (

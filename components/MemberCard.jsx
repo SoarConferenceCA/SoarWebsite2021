@@ -26,12 +26,12 @@ export default function MemberCard({ member }) {
 
                         <div className="relative w-full -ml-100">
                             <div className="absolute bottom-0 right-0">
-                                <div style={{top: '25px'}} className={`relative px-1 bg-odd-green mr-4 mt-2 grid grid-cols-${member.socials.length}`}>
+                                <div style={{top: '25px'}} className={`relative px-1 bg-accent-no-alpha mr-4 mt-2 grid grid-cols-${member.socials.length}`}>
                                     {
                                         member.socials.map( ({ type, link }, idx) => (
                                             <div key={idx} className="p-2">
                                                 <Link href={link}>
-                                                    <a className="text-white hover:text-gray-200" target="_blank">
+                                                    <a className="text-white hover:text-primary-no-alpha" target="_blank">
                                                         {mediaTypeToIcon[type]}
                                                     </a>
                                                 </Link>

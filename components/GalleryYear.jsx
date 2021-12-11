@@ -54,7 +54,7 @@ export default function GalleryYear({ chunkSize, year }) {
             <div class="flex flex-nowrap px-4">
                 <div className="self-stretch flex justify-center">
                     <button
-                        className="text-gray-700 hover:text-pale-pink transform transition duration-200 hover:scale-150"
+                        className="text-gray-700 hover:text-primary transform transition duration-200 hover:scale-150"
                         onClick={scrollPrev}
                         style={{width: '24px'}}>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -75,7 +75,7 @@ export default function GalleryYear({ chunkSize, year }) {
                 </div>
                 <div className="self-stretch flex justify-center">
                     <button
-                        className="text-gray-700 hover:text-pale-pink transform transition duration-200 hover:scale-150"
+                        className="text-gray-700 hover:text-primary transform transition duration-200 hover:scale-150"
                         onClick={scrollNext}
                         style={{width: '24px'}}>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,7 +88,7 @@ export default function GalleryYear({ chunkSize, year }) {
                 {
                     scrollSnaps.map( (_, idx) => (
                         <button
-                            className={`w-3 h-3 rounded-full ${idx === selectedIndex ? "bg-pale-pink" : "bg-gray-400" }`}
+                            className={`w-3 h-3 rounded-full ${idx === selectedIndex ? "bg-primary" : "bg-gray-400" }`}
                             key={idx}
                             onClick={() => scrollTo(idx)}
                         />

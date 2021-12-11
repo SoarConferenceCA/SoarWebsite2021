@@ -3,6 +3,8 @@ import { withRouter } from 'next/router';
 import Link from 'next/link';
 import navStyles from '../styles/navbar.module.css';
 
+const highlightColour = 'yellow-200';
+
 class NavBar extends Component {
     constructor(props) {
         super(props);
@@ -19,11 +21,11 @@ class NavBar extends Component {
 
     render() {
         return (
-            <nav className="bg-odd-green shadow rounded-b-lg md:rounded-none">
+            <nav className="bg-primary shadow rounded-b-lg md:rounded-none">
                 <div className="mx-2 flex justify-between py-1">
                     <div className="grid place-items-center">
                         <Link href="/">
-                            <a className="py-4 px-2 text-lg text-gray-700 hover:text-gray-900">
+                            <a className={`py-4 px-2 text-lg text-red-100 hover:text-${highlightColour}`}>
                                 {/* PUT LOGO HERE */}
                                 <span className="font-bold">
                                     Soar Conference
@@ -37,7 +39,7 @@ class NavBar extends Component {
                             {
                                 this.props.links.map( ({ title, href }, idx) => (
                                     <Link key={idx} href={href}>
-                                        <a className={`mx-2 px-3 py-2 border-2 hover:text-gray-900 hover:border-gray-900 ${this.props.router.route === href ? 'border-2 hover:border-gray-900' : 'border-transparent hover:border-2'}`}>
+                                        <a className={`mx-2 px-3 py-2 border-2 hover:text-${highlightColour} hover:border-${highlightColour} ${this.props.router.route === href ? 'border-2 hover:border-gray-900' : 'border-transparent hover:border-2'}`}>
                                             {title}
                                         </a>
                                     </Link>
@@ -48,7 +50,7 @@ class NavBar extends Component {
 
                     
                     <div className="flex items-center md:hidden">
-                        <button onClick={this.toggleDropDown} className="p-1 rounded text-gray-900 border-transparent border-2 hover:border-white hover:text-white">
+                        <button onClick={this.toggleDropDown} className="p-1 rounded text-red-200 border-transparent border-2 hover:border-white hover:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                             </svg>

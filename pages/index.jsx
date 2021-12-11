@@ -2,11 +2,13 @@ import indexStyles from '../styles/index.module.css';
 import Link from 'next/link';
 import GalleryPreview from '../components/GalleryPreview';
 import { preview } from "../data/gallerydata";
+import { testimonials } from '../data/testimonials';
+import BetterTestimonials from '../components/BetterTestimonials';
+import BehindImageThing from '../components/BehindImageThing';
 
 export default function Index() {
     return (
         <div>
-            {/*  */}
             <div className="mt-4">
                 <div className="bg-unknown bg-center h-ab10 sm:h-ab4 lg:h-ab10">
                     <div className="px-3 sm:px-8 lg:px-20 text-white h-full grid place-items-start">
@@ -16,16 +18,16 @@ export default function Index() {
                                     <h1>SOAR</h1>
                                     <h1>Conference 2022</h1>
                                 </div>
-                                <h4 className="text-lg">
+                                <h4 className="mt-2 text-lg">
                                     Inspiring the leaders of tomorrow
                                 </h4>
                             </div>
                             <div className="mt-8 grid-cols-2 text-md">
-                                <button className="mt-2 mr-2 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-red-700 bg-red-50 hover:bg-red-100 text-red-500 font-bold">
+                                <button className="mt-2 mr-2 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-primary bg-red-50 hover:bg-red-100 text-primary font-bold">
                                     Register for SOAR 2022
                                 </button>
 
-                                <button className="mt-2 sm:ml-4 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-white hover:border-red-200 bg-transparent hover:bg-red-900 text-white font-bold">
+                                <button className="mt-2 sm:ml-4 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-primary bg-red-50 hover:bg-red-100 text-primary font-bold">
                                     Volunteer
                                 </button>
                             </div>
@@ -62,11 +64,11 @@ export default function Index() {
             <div className="w-full my-16">
                 <div className="flex justify-center">
                     <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
-                        <h2 className="font-bold text-pale-pink text-4xl">
+                        <h2 className="font-bold text-primary text-4xl">
                             The SOAR Gallery
                         </h2>
 
-                        <button className="mt-6 sm:mt-auto p-2 bg-transparent hover:bg-gray-50 text-pale-pink font-bold text-lg border-2 border-pale-pink hover:border-red-600">
+                        <button className="mt-6 sm:mt-auto p-2 bg-transparent hover:bg-gray-50 text-primary font-bold text-lg border-2 border-primary hover:border-red-600">
                             <Link href="/gallery">
                                 View All Photos
                             </Link>
@@ -75,6 +77,10 @@ export default function Index() {
                 </div>
 
                 <GalleryPreview previews={preview} />
+            </div>
+
+            <div className="my-18 px-8 lg:px-12">
+                <BetterTestimonials testimonials={testimonials} />
             </div>
 
             <div className="w-full mb-24">
@@ -89,7 +95,7 @@ export default function Index() {
                             </div>
                             
 
-                            <button className="mt-6 sm:mt-auto ml-2 p-2 bg-transparent hover:bg-gray-50 text-pale-pink font-bold text-lg border-2 border-pale-pink hover:border-red-600">
+                            <button className="mt-6 sm:mt-auto ml-2 p-2 bg-transparent hover:bg-gray-50 text-primary font-bold text-lg border-2 border-primary hover:border-red-600">
                                 Apply Now
                             </button>
 
@@ -117,40 +123,21 @@ export default function Index() {
                     </div>
 
                     <div className="max-h-full md:max-h-h440 lg:max-h-full w-full">
-                        <div className="w-full h-full px-4 flex">
-                            <div className="relative w-full h-full">
-                                <div className="absolute w-10/12 h-2/3 max-h-h320 top-35 right-0 bg-odd-green" />
+                        <BehindImageThing direction="right">
+                            <div className="w-4/5 h-4/5 absolute bottom-0 left-0">
+                                <img src="/assets/unknown.png" className="absolute bottom-0 left-0" />
                             </div>
+                        </BehindImageThing>
+                        {/* <div className="w-full h-full px-4 flex">
+                            <BehindImageThing direction="right" />
 
                             <div className="relative w-full h-full -ml-100">
-                                <svg width="100%" height="100%" viewBox="0 0 441 353" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M-1 97.5L157.5 1L285.5 217L432.5 119" stroke="#8FB5Af"/>
-                                    <path d="M0 139L146.5 55L276.5 281L440 159.5" stroke="#DD7766" strokeOpacity="0.6"/>
-                                    <path d="M0 180L132.5 103L259.5 352L440 213.5" stroke="#DD7766" strokeOpacity="0.4"/>
-                                </svg>
-                            </div>
-
-                            <div className="relative w-full h-full -ml-100">
-                                {/* <img src="/assets/unknown.png" alt="" className="block max-w-4/5 max-h-4/5 absolute bottom-0 left-0" /> */}
                                 <div className="w-4/5 h-4/5 absolute bottom-0 left-0">
                                     <img src="/assets/unknown.png" className="absolute bottom-0 left-0" />
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
-
-                    {/* <div className="w-full h-full px-4 relative flex justify-center">
-                        <div className="relative top-0 z-0 w-full h-full">
-
-                        </div>
-                        <div className="relative w-full h-full z-10">
-                            <svg width="100%" height="100%" viewBox="0 0 441 353" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M-1 97.5L157.5 1L285.5 217L432.5 119" stroke="#8FB0A9"/>
-                                <path d="M0 139L146.5 55L276.5 281L440 159.5" stroke="#DD7766" stroke-opacity="0.6"/>
-                                <path d="M0 180L132.5 103L259.5 352L440 213.5" stroke="#DD7766" stroke-opacity="0.4"/>
-                            </svg>
-                        </div>
-                    </div> */}
                 </div>
 
             </div>

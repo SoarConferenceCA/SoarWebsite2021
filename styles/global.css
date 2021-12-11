@@ -6,6 +6,13 @@ body {
     --pale-pink: #dd7766;
     --weird-gray: #e5e5e5;
     --odd-green: #8fb0a9;
+    
+    --primary-dull: #920019ab;
+    --primary: #920019cc;
+    --accent: #cc975acc;
+
+    --primary-no-alpha: #920019;
+    --accent-no-alpha: #cc975a;
 }
 
 main {

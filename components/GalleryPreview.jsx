@@ -30,14 +30,14 @@ export default function GalleryPreview({ previews }) {
         if (!emblaApi) return;
         setScrollSnaps(emblaApi.scrollSnapList());
         emblaApi.on('reInit', () => setScrollSnaps(emblaApi.scrollSnapList()));
-    })
+    }, [ emblaApi, setScrollSnaps ])
 
     return (
         <div className="m-12">
             <div className="flex flex-no-wrap px-4">
                 <div className="self-stretch flex justify-center mr-2">
                     <button
-                            className="text-gray-700 hover:text-pale-pink transform transition duration-200 hover:scale-150"
+                            className="text-gray-700 hover:text-primary transform transition duration-200 hover:scale-150"
                             onClick={scrollPrev}
                             style={{width: '24px'}}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -58,7 +58,7 @@ export default function GalleryPreview({ previews }) {
                 </div>
                 <div className="self-stretch flex justify-center ml-2">
                     <button
-                        className="text-gray-700 hover:text-pale-pink transform transition duration-200 hover:scale-150"
+                        className="text-gray-700 hover:text-primary transform transition duration-200 hover:scale-150"
                         onClick={scrollNext}
                         style={{width: '24px'}}>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -67,13 +67,13 @@ export default function GalleryPreview({ previews }) {
                     </button>
                 </div>
             </div>
-            <div className="flex items-cener justify-center mt-5 space-x-2">
+            <div className="flex items-center justify-center mt-5 space-x-2">
                 {
                     scrollSnaps.map( (_, idx) => (
                         <button
-                            className={`w-3 h-3 rounded-full ${idx === selectedIndex ? "bg-pale-pink" : "bg-gray-400" }`}
+                            className={`w-3 h-3 rounded-full ${idx === selectedIndex ? "bg-primary" : "bg-gray-400" }`}
                             key={idx}
-                            onClick={() => scrollTop(idx)}
+                            onClick={() => scrollTo(idx)}
                         />
                     ))
                 }

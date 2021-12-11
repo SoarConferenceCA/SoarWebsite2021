@@ -20,7 +20,7 @@ export default function Sponsors() {
                     </p>
 
                     <div className="mt-16 flex justify-center">
-                        <button className="px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-gray-500 hover:border-pale-pink font-bold text-gray-500 hover:text-pale-pink">
+                        <button className="px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-gray-500 hover:border-primary font-bold text-gray-500 hover:text-primary">
                             Sponsorship 2022
                         </button>
                     </div>
@@ -31,7 +31,7 @@ export default function Sponsors() {
                 </div>
             </div>
 
-            <div className="bg-odd-green mt-18 pb-22">
+            <div className="bg-accent mt-18 pb-22">
                 <div className="py-6 mx-16">
                     <h3 className="text-white text-2xl">
                         Intrested in a partnership?

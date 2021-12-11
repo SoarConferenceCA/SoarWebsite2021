@@ -6,10 +6,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lime: '#a4beb8',
         'pale-pink': '#dd7766',
         'weird-grey': '#e5e5e5',
-        'odd-green': '#8fb0a9'
+        'odd-green': '#8fb0a9',
+
+        'primary-dull': '#920019ab',
+        'primary': '#920019cc',
+        'primary-no-alpha': '#920019',
+        'accent': '#cc975acc',
+        'accent-no-alpha': '#cc975a',
       },
       backgroundImage: {
         'unknown': "url('/assets/unknown.png')"
@@ -32,8 +37,8 @@ module.exports = {
         'w280': '280px'
       },
       maxHeight: {
-        'h320': '240px',
-        'h440': '300px'
+        'h320': '300px',
+        'h440': '500px'
       },
       inset: {
         '35': '35px'
@@ -41,7 +46,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      fontWeight: ['hover']
+    },
   },
   plugins: [],
 }

@@ -1,8 +1,8 @@
-export default function BehindImageThing({ direction }) {
+export default function BehindImageThing({ direction, children }) {
     return (
-        <>
+        <div className="w-full h-full px-4 flex md:max-h-h440">
             <div className="relative w-full h-full">
-                <div className={`absolute w-10/12 h-2/3 max-h-h320 top-35 ${direction}-0 bg-odd-green`} />
+                <div className={`absolute w-10/12 h-2/3 max-h-h320 top-35 ${direction}-0 bg-accent`} />
             </div>
 
             <div className="relative w-full h-full -ml-100">
@@ -12,6 +12,10 @@ export default function BehindImageThing({ direction }) {
                     <path d="M0 180L132.5 103L259.5 352L440 213.5" stroke="#DD7766" strokeOpacity="0.4"/>
                 </svg>
             </div>
-        </>
+
+            <div className="relative w-full h-full -ml-100">
+                {children}
+            </div>
+        </div>
     )
 }
