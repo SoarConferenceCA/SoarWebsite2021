@@ -5,12 +5,21 @@ import { preview } from "../data/gallerydata";
 import { testimonials } from '../data/testimonials';
 import BetterTestimonials from '../components/BetterTestimonials';
 import BehindImageThing from '../components/BehindImageThing';
+import { useState, useEffect } from 'react';
 
 export default function Index() {
+    const [ troll, setTroll ] = useState(false);
+
+    useEffect( () => {
+        if (Math.round(Math.random() * 1000) > 990) {
+            setTroll(true);
+        }
+    }, []);
+
     return (
         <div>
             <div className="mt-4">
-                <div className="bg-unknown bg-center h-ab10 sm:h-ab4 lg:h-ab10">
+                <div className={`${ troll ? 'bg-troll' : 'bg-unknown'} bg-center h-ab10 sm:h-ab4 lg:h-ab10`}>
                     <div className="px-3 sm:px-8 lg:px-20 text-white h-full grid place-items-start">
                         <div className="py-20 h-full grid grid-cols-1 place-content-between">
                             <div>

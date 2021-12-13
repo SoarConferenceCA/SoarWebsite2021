@@ -17,7 +17,8 @@ module.exports = {
         'accent-no-alpha': '#cc975a',
       },
       backgroundImage: {
-        'unknown': "url('/assets/unknown.png')"
+        'unknown': "url('/assets/unknown.png')",
+        'troll': "url('/assets/troll.jpg')"
       },
       width: {
         'w360': '360px',
