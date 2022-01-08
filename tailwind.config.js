@@ -1,5 +1,6 @@
 const colors = require('tailwindcss/colors');
 
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -18,11 +19,13 @@ module.exports = {
       },
       backgroundImage: {
         'unknown': "url('/assets/unknown.png')",
-        'troll': "url('/assets/troll.jpg')"
+        'troll': "url('/assets/troll.jpg')",
+        'superfun': "url('/assets/previews/2019_picture_16.jpg')",
       },
       width: {
         'w360': '360px',
-        'w110per': '110%'
+        'w110per': '110%',
+        'w95': '95%'
       },
       height: {
         'ab10': '480px',
