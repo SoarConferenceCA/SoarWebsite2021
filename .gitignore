@@ -2,3 +2,6 @@ node_modules
 .next
 build
 out
+
+public/assets/gallery*
+public/assets/previews
