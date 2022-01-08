@@ -19,11 +19,11 @@ export default function Index() {
     return (
         <div>
             <div className="mt-4">
-                <div className={`${ troll ? 'bg-troll' : 'bg-unknown'} bg-center h-ab10 sm:h-ab4 lg:h-ab10`}>
+                <div className={`${ troll ? 'bg-troll' : 'bg-superfun'} bg-center bg-cover h-ab10 sm:h-ab4 lg:h-ab10`}>
                     <div className="px-3 sm:px-8 lg:px-20 text-white h-full grid place-items-start">
                         <div className="py-20 h-full grid grid-cols-1 place-content-between">
                             <div>
-                                <div className="text-6xl">
+                                <div className={`text-6xl ${indexStyles['stroke-text']}`}>
                                     <h1>SOAR</h1>
                                     <h1>Conference 2022</h1>
                                 </div>
@@ -32,13 +32,17 @@ export default function Index() {
                                 </h4>
                             </div>
                             <div className="mt-8 grid-cols-2 text-md">
-                                <button className="mt-2 mr-2 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-primary bg-red-50 hover:bg-red-100 text-primary font-bold">
-                                    Register for SOAR 2022
-                                </button>
+                                <Link href="/apply">
+                                    <button className="mt-2 mr-2 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-primary bg-red-50 hover:bg-red-100 text-primary font-bold">
+                                        Register for SOAR 2022
+                                    </button>
+                                </Link>
 
-                                <button className="mt-2 sm:ml-4 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-primary bg-red-50 hover:bg-red-100 text-primary font-bold">
-                                    Volunteer
-                                </button>
+                                <Link href="/apply">
+                                    <button className="mt-2 sm:ml-4 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-primary bg-red-50 hover:bg-red-100 text-primary font-bold">
+                                        Volunteer
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -65,12 +69,32 @@ export default function Index() {
                             </p>
                         </div>
 
-                        <img className="min-h-320 w-full h-full" src="/assets/unknown.png" />
+                        <img className="min-h-320 w-full h-full" src="/assets/previews/2019_picture_7.jpg" />
                     </div>
                 </div>
             </div>
 
-            <div className="w-full my-16">
+            <div className="w-full my-16 flex justify-center">
+                <div className="grid grid-cols-1 md:grid-cols-2">
+                    <div className="grid place-items-center">
+                        <div className="grid place-items-center space-y-2">
+                            <h2 className="font-bold text-primary text-4xl">
+                                The SOAR Gallery
+                            </h2>
+
+                            <button className="mt-6 sm:mt-auto p-2 bg-transparent hover:bg-gray-50 text-primary font-bold text-lg border-2 border-primary hover:border-red-600">
+                                <Link href="/gallery">
+                                    View All Photos
+                                </Link>
+                            </button>
+                        </div>
+                    </div>
+
+                    <GalleryPreview previews={preview} />
+                </div>
+            </div>
+
+            {/* <div className="w-full my-16">
                 <div className="flex justify-center">
                     <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
                         <h2 className="font-bold text-primary text-4xl">
@@ -86,10 +110,20 @@ export default function Index() {
                 </div>
 
                 <GalleryPreview previews={preview} />
-            </div>
+            </div> */}
 
             <div className="my-18 px-8 lg:px-12">
-                <BetterTestimonials testimonials={testimonials} />
+                <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2 space-x-8">
+                    <div className="w-full">
+                        <BehindImageThing direction="left">
+                            <div className="w-4/5 h-4/5 absolute bottom-0 right-0">
+                                <img src="/assets/previews/2018_picture_11.jpg" className="max-w-full max-h-full" />
+                            </div>
+                        </BehindImageThing>
+                    </div>
+
+                    <BetterTestimonials testimonials={testimonials} />
+                </div>
             </div>
 
             <div className="w-full mb-24">
@@ -103,10 +137,11 @@ export default function Index() {
                                 </h3>
                             </div>
                             
-
-                            <button className="mt-6 sm:mt-auto ml-2 p-2 bg-transparent hover:bg-gray-50 text-primary font-bold text-lg border-2 border-primary hover:border-red-600">
-                                Apply Now
-                            </button>
+                            <Link href='/apply'>
+                                <button className="mt-6 sm:mt-auto ml-2 p-2 bg-transparent hover:bg-gray-50 text-primary font-bold text-lg border-2 border-primary hover:border-red-600">
+                                    Apply Now
+                                </button>
+                            </Link>
 
                             <div className={`my-6 ${indexStyles['path-holder']}`}>
                                 <div className="max-w-w360">
@@ -133,19 +168,10 @@ export default function Index() {
 
                     <div className="max-h-full md:max-h-h440 lg:max-h-full w-full">
                         <BehindImageThing direction="right">
-                            <div className="w-4/5 h-4/5 absolute bottom-0 left-0">
-                                <img src="/assets/unknown.png" className="absolute bottom-0 left-0" />
+                            <div className="w-w95 lg:w-4/5 h-4/5 absolute bottom-0 left-0">
+                                <img src="/assets/previews/2017_picture_9.jpg" className="absolute bottom-0 left-0" />
                             </div>
                         </BehindImageThing>
-                        {/* <div className="w-full h-full px-4 flex">
-                            <BehindImageThing direction="right" />
-
-                            <div className="relative w-full h-full -ml-100">
-                                <div className="w-4/5 h-4/5 absolute bottom-0 left-0">
-                                    <img src="/assets/unknown.png" className="absolute bottom-0 left-0" />
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
 

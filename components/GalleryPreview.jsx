@@ -1,23 +1,35 @@
 import useEmblaCarousel from "embla-carousel-react"
 import AutoPlay from "embla-carousel-autoplay";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 export default function GalleryPreview({ previews }) {
-    const [ emblaRef, emblaApi ] = useEmblaCarousel({ loop: true, skipSnaps: false}, [AutoPlay( { delay: 4000 } )])
+    const autoplay = useRef(
+        AutoPlay( { delay: 4000 } )
+    );
+    const [ emblaRef, emblaApi ] = useEmblaCarousel({ loop: true, skipSnaps: false}, [ autoplay.current ])
     const [ selectedIndex, setSelectedIndex ] = useState(0);
     const [ scrollSnaps, setScrollSnaps ] = useState([]);
 
-    const scrollTo = useCallback( (idx) => emblaApi && emblaApi.scrollTo(idx), [emblaApi] );
+    const scrollTo = useCallback( (idx) => {
+        if (!emblaApi) return;
+        emblaApi.scrollTo(idx)
+        autoplay.current.reset();
+    }, [emblaApi] );
     
     const scrollPrev = useCallback( () => {
-        if (emblaApi) emblaApi.scrollPrev();
+        if (!emblaApi) return;
+        emblaApi.scrollPrev();
+        autoplay.current.reset();
     }, [ emblaApi ]);
     const scrollNext = useCallback( () => {
-        if (emblaApi) emblaApi.scrollNext();
+        if (!emblaApi) return;
+        emblaApi.scrollNext();
+        autoplay.current.reset();
     }, [ emblaApi ]);
 
     const onSelect = useCallback( () => {
-        if (emblaApi) setSelectedIndex(emblaApi.selectedScrollSnap());
+        if (!emblaApi) return;
+        setSelectedIndex(emblaApi.selectedScrollSnap());
     }, [ emblaApi, setSelectedIndex ]);
 
     useEffect( () => {
@@ -33,7 +45,7 @@ export default function GalleryPreview({ previews }) {
     }, [ emblaApi, setScrollSnaps ])
 
     return (
-        <div className="m-12">
+        <div className="w-full my-12">
             <div className="flex flex-no-wrap px-4">
                 <div className="self-stretch flex justify-center mr-2">
                     <button

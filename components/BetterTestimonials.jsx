@@ -1,28 +1,35 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import BehindImageThing from '../components/BehindImageThing';
 
 
 export default function BetterTestimonials({ testimonials }) {
-    const [ emblaRef, emblaApi ] = useEmblaCarousel({ loop: true, draggable: false, skipSnaps: false }, [ Autoplay({ delay: 8000 }) ]);
+    const autoplay = useRef(
+        Autoplay({ delay: 4000 })
+    );
+    const [ emblaRef, emblaApi ] = useEmblaCarousel({ loop: true, draggable: false, skipSnaps: false }, [ autoplay.current ]);
     const [ scrollSnaps, setScrollSnaps ] = useState([]);
     const [ selectedIndex, setSelectedIndex ] = useState(0);
 
     const scrollPrev = useCallback( () => {
-        emblaApi && emblaApi.scrollPrev();
+        if (!emblaApi) return;
+        emblaApi.scrollPrev();
+        autoplay.current.reset();
     }, [ emblaApi ]);
 
     const scrollNext = useCallback( () => {
-        emblaApi && emblaApi.scrollNext();
+        if (!emblaApi) return;
+        emblaApi.scrollNext();
+        autoplay.current.reset();
     }, [ emblaApi ]);
 
     useEffect( () => {
         if (!emblaApi) return;
         emblaApi.on("select", () => {
             setSelectedIndex(emblaApi.selectedScrollSnap());
+            autoplay.current.reset();
         });
     }, [ emblaApi, setSelectedIndex ]);
 
@@ -31,6 +38,7 @@ export default function BetterTestimonials({ testimonials }) {
         setScrollSnaps(emblaApi.scrollSnapList());
         emblaApi.on("reInit", () => {
             setScrollSnaps(emblaApi.scrollSnapList());
+            autoplay.current.reset();
         });
     }, [ emblaApi, setScrollSnaps ]);
 
@@ -40,15 +48,7 @@ export default function BetterTestimonials({ testimonials }) {
                 <div className="flex w-full h-full">
                     {
                         testimonials.map( (testimonial, idx) => (
-                            <div key={idx} className="w-full h-full flex-none grid grid-cols-1 md:grid-cols-2 space-x-8">
-                                <div className="w-full">
-                                    <BehindImageThing direction="left">
-                                        <div className="w-4/5 h-4/5 absolute bottom-0 right-0">
-                                            <img src={testimonial.image} className="max-w-full max-h-full" />
-                                        </div>
-                                    </BehindImageThing>
-                                </div>
-
+                            <div key={idx} className="w-full h-full flex-none">
                                 <div className="w-full h-full">
                                     <div className="flex flex-col">
                                         <h5>

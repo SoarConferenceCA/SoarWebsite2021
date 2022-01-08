@@ -2,7 +2,7 @@
     background-image: linear-gradient(to right, var(--primary-no-alpha), var(--primary-no-alpha) 100%);
     background-repeat: no-repeat;
     background-size: 4px 45%;
-    background-position: 23px top;
+    background-position: 21px top;
 }
 
 .circle-path {
@@ -12,45 +12,53 @@
     height: 50px;
 }
 
-@media (min-width: 223px) {
+@media (min-width: 221px) {
     .path-holder {
         background-size: 4px 47%;
-        background-position: 23px top;
+        background-position: 21px top;
     }
 }
 
 @media (min-width: 348px) {
     .path-holder {
         background-size: 4px 50%;
-        background-position: 23px center;
+        background-position: 21px center;
     }
 }
 
 @media (min-width: 640px) {
     .path-holder {
         background-size: 4px 50%;
-        background-position: 23px top;
+        background-position: 21px top;
     }
 }
 
-@media (min-width: 663px) {
+@media (min-width: 661px) {
     .path-holder {
         background-size: 4px 50%;
-        background-position: 23px center;
+        background-position: 21px center;
     }
 }
 
 @media (min-width: 768px) {
     .path-holder {
         background-size: 4px 50%;
-        background-position: 23px top;
+        background-position: 21px top;
     }
 }
 
 @media (min-width: 1294px) {
     .path-holder {
         background-size: 4px 60%;
-        background-position: 23px top;
+        background-position: 21px top;
     }
 }
 
+.stroke-text {
+    --stroke-color: var(--primary-no-alpha);
+    text-shadow:
+    -1px -1px 0 var(--stroke-color),  
+    1px -1px 0 var(--stroke-color),
+    -1px 1px 0 var(--stroke-color),
+    1px 1px 0 var(--stroke-color);
+}
