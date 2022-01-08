@@ -18,7 +18,7 @@ export default function Contact() {
                             General Inquiry?
                         </h5>
                         <h5 className="mt-2 text-xl text-gray-600">
-                            Email Us At {soarEmail}
+                            Email us at {soarEmail}
                         </h5>
 
                         <div className="mt-6">
@@ -90,7 +90,7 @@ export default function Contact() {
                             }
                         </div>
 
-                        <img src="/assets/unknown.png" className="w-full mt-10 rounded-2xl" />
+                        <img src="/assets/previews/2019_picture_32.jpg" className="w-full mt-10 rounded-2xl" />
                     </div>
                 </div>
             </div>
