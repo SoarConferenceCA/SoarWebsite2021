@@ -73,7 +73,7 @@ export default function FAQCategory({ category }) {
 
                 <div className="hidden md:block w-full h-full rounded-r-lg pr-8 pl-2 py-4 bg-primary">
                     <div className="flex justify-center w-full h-full">
-                        <img src={category.categoryImage} className="self-center flex-grow-0 max-w-full max-h-full" />
+                        <img src={category.categoryImage} className="self-center shadow-lg flex-grow-0 max-w-full max-h-full rounded-lg" />
                     </div>
                 </div>                
             </div>
