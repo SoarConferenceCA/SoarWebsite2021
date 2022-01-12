@@ -18,11 +18,11 @@ module.exports.faqCategories = [
         questions: [
             {
                 question: "When will the conference happen?",
-                answer: "This year, SOAR will be taking place on Saturday, May 29th, 2021. Times and schedules will be provided closer to the date of the conference for accepted Delegates and volunteers."
+                answer: "This year, SOAR will be taking place on Saturday, June 4th 2022. Times and schedules will be provided closer to the date of the conference for accepted Delegates and volunteers."
             },
             {
                 question: "Where will the conference be taking place?",
-                answer: "Due to COVID-19 restrictions, SOAR will be held virtually. We will reveal the specific digital platform to accepted attendees closer to the date of the conference."
+                answer: "Dependent on the Ontario restrictions and guidelines, SOAR 2022 will either be held virtually or in-person at Turner Fenton Secondary School."
             },
             {
                 question: "How does a virtual conference work?",
@@ -44,7 +44,7 @@ module.exports.faqCategories = [
             },
             {
                 question: "When do I apply?",
-                answer: "Delegate applications are currently open with a submission deadline of Tuesday, May 4th, 2021 @ 11:59 PM!"
+                answer: "Applications coming soon."
             },
             {
                 question: "Is there an interview process?",
@@ -69,7 +69,7 @@ module.exports.faqCategories = [
                 answer: "At SOAR, sponsorship is a partnership. The PDF on the Sponsors page offers a starting point for compensation. However, we are glad to work with you to meet your needs."
             },
             {
-                question: "Can I support SOAR 2021 by any other means, rather than financially?",
+                question: "Can I support SOAR 2022 by any other means, rather than financially?",
                 answer: "Yes! You can be an in-kind sponsor or simply donate your goods and services. Your goods can even be branded with your company logo as a way to promote your business to hundreds of students!"
             }
         ]
@@ -96,7 +96,7 @@ module.exports.faqCategories = [
             },
             {
                 question: "Whoa! When do I apply?",
-                answer: "LD applications are now closed for SOAR 2021. Successful applicants have already been contacted. Thank you to everyone who applied—and to returning high school students: keep an eye out for next year's SOAR Conference!"
+                answer: "Applications coming soon."
             },
             {
                 question: "Is there an interview process?",
