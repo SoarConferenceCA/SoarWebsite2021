@@ -1,4 +1,3 @@
-const { basePath } = require('../config');
 /*
 Testimonial {
     sobStory: "",
@@ -9,7 +8,7 @@ Testimonial {
 }
 */
 
-let testimonials = [
+module.exports.testimonials = [
     {
         sobStory: `As soon as I got there, the volunteers were very eager to help, after that the volunteers were engaging, keeping us engaged with songs and activities. During the mentorship I learned a lot. The LDs walked us through time management, organization and conflict de-escalation. They were always ready to answer any questions we might have. I can say from experience I have learned a lot about high school from SOAR.`,
         name: 'Vaarij Betala',
@@ -53,12 +52,3 @@ let testimonials = [
         image: '/assets/unknown.png'
     },
 ];
-
-testimonials = testimonials.map( (item) => {
-    return {
-        ...item,
-        image: `${basePath}${item.image}`
-    };
-});
-
-module.exports = { testimonials };

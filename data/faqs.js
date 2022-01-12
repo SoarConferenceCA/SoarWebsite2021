@@ -1,4 +1,3 @@
-const { basePath } = require('../config');
 /*
 
 FAQCategory {
@@ -12,7 +11,7 @@ FAQCategory {
 
 */
 
-let faqCategories = [
+module.exports.faqCategories = [
     {
         categoryName: 'General',
         categoryImage: '/assets/previews/2017_picture_7.jpg',
@@ -106,12 +105,3 @@ let faqCategories = [
         ]
     },
 ];
-
-faqCategories = faqCategories.map( (item) => {
-    return { 
-        ...item,
-        categoryImage: `${basePath}${item.categoryImage}`
-    };
-});
-
-module.exports = { faqCategories };
