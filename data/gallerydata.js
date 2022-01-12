@@ -1,4 +1,6 @@
-module.exports.galleryData = [
+const { basePath } = require('../config');
+
+let galleryData = [
     {
         year: 2017,
         photos: [
@@ -85,8 +87,22 @@ module.exports.galleryData = [
     }
 ];
 
-module.exports.preview = [
+galleryData = galleryData.map( (item) => {
+    return {
+        ...item,
+        photos: item.photos.map( (url) => `${basePath}${url}` )
+    };
+});
+
+let preview = [
     '/assets/previews/2017_picture_1.jpg',
     '/assets/previews/2018_picture_1.jpg',
     '/assets/previews/2019_picture_1.jpg'
 ];
+
+preview = preview.map( (url) => `${basePath}${url}` );
+
+module.exports = {
+    galleryData,
+    preview
+};

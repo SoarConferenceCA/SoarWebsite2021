@@ -6,5 +6,10 @@ module.exports = (phase, { defaultConfig }) => {
         reactStrictMode: true,
     }
 
+    if (process.env.BTYPE === "nocus") {
+        config.assetPrefix = '/SoarWebsite2021';
+        config.basePath = '/SoarWebsite2021';
+    }
+
     return config;
 }
