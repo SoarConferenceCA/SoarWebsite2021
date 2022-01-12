@@ -110,7 +110,7 @@ let faqCategories = [
 faqCategories = faqCategories.map( (item) => {
     return { 
         ...item,
-        categoryImage: `${config.basePath}${item.categoryImage}`
+        categoryImage: `${basePath}${item.categoryImage}`
     };
 });
 
