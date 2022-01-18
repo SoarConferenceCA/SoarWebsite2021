@@ -27,7 +27,7 @@ export default function Index() {
                                     <h1>SOAR</h1>
                                     <h1>Conference 2022</h1>
                                 </div>
-                                <h4 className="mt-2 text-lg">
+                                <h4 className="mt-2 text-lg font-nun">
                                     Inspiring the leaders of tomorrow
                                 </h4>
                             </div>
@@ -53,11 +53,11 @@ export default function Index() {
                 <div className="m-6 p-7 bg-white rounded-md shadow-md">
                     <div className="px-4 grid grid-cols-1 md:grid-cols-2">
                         <div className="py-16">
-                            <h2 className="text-2xl">
+                            <h2 className="text-2xl font-ara">
                                 What is SOAR?
                             </h2>
 
-                            <p className="mt-3 font-light text-md">
+                            <p className="mt-3 font-light text-md font-spar">
                                 The SOAR Conference aims to ease students’
                                 transitions from middle school to high school
                                 through various workshops and activities.
@@ -78,7 +78,7 @@ export default function Index() {
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     <div className="grid place-items-center">
                         <div className="grid place-items-center space-y-2">
-                            <h2 className="font-bold text-primary text-4xl">
+                            <h2 className="font-bold text-primary text-4xl font-int">
                                 The SOAR Gallery
                             </h2>
 
@@ -144,7 +144,7 @@ export default function Index() {
                             </Link>
 
                             <div className={`my-6 ${indexStyles['path-holder']}`}>
-                                <div className="max-w-w360">
+                                <div className="max-w-w360 font-nun">
                                     <div className="flex justify-start">
                                         <div className="h-full">
                                             <div className={`${indexStyles['circle-path']}`} />

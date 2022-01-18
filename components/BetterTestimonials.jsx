@@ -58,7 +58,7 @@ export default function BetterTestimonials({ testimonials }) {
                                         </h5>
 
                                         <div className="m-12 p-8 bg-white flex-1 grid grid-cols-1 place-items-center">
-                                            <p className="text-md text-black">
+                                            <p className="text-md text-black font-nun">
                                                 { testimonial.sobStory }
                                             </p>
 

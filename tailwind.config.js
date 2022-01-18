@@ -46,6 +46,16 @@ module.exports = {
       },
       inset: {
         '35': '35px'
+      },
+      fontFamily: {
+        serif: [
+          'Taviraj'
+        ],
+        nun: [ 'Nunito' ],
+        ara: [ 'Arapey '],
+        spar: [ 'Spartan' ],
+        int: [ 'Inter' ],
+        libre: [ 'Libre Baskerville' ],
       }
     },
   },

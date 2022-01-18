@@ -47,7 +47,7 @@ export default function MemberCard({ member }) {
                         <img src={member.image} className="rounded-md w-full h-full" />
                     </div> */}
                     
-                    <h3 className="w-full text-xl mt-8 ml-4 font-bold">
+                    <h3 className="w-full text-xl mt-8 ml-4 font-bold font-libre">
                         {`${member.firstname} ${member.lastname}`}
                     </h3>
                     <div className="w-full mb-2 flex-auto">

@@ -15,81 +15,27 @@ const x = [
 
 module.exports.portfolios = [
     {
-        name: "MLD",
+        name: "Chair",
         members: [
             {
-                firstname: "Naythan",
-                lastname: "Jayamaha",
-                image: "/assets/anon.jpg",
+                firstname: "Rhea",
+                lastname: "Nijjer",
+                image: "/assets/team/Rhea_Nijjer.jpg",
                 socials: [
                     {
                         type: mediaTypes.INSTAGRAM,
-                        link: "https://instagram.com/naythan.jay/"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        name: "Sponsorship",
-        members: [
-            {
-                firstname: "Komal",
-                lastname: "Jambusaria",
-                image: "/assets/anon.jpg",
-                socials: [
-                    {
-                        type: mediaTypes.INSTAGRAM,
-                        link: "https://instagram.com/komal_j8/"
+                        link: "https://instagram.com/rheanijjer/"
                     }
                 ]
             },
             {
-                firstname: "Anmol",
-                lastname: "Bal",
-                image: "/assets/anon.jpg",
+                firstname: "Sabrina",
+                lastname: "Singh",
+                image: "/assets/team/Sabrina_Singh.jpg",
                 socials: [
                     {
                         type: mediaTypes.INSTAGRAM,
-                        link: "https://instagram.com/anmol_290/"
-                    }
-                ]
-            },
-            {
-                firstname: "Mohamed",
-                lastname: "Alinur",
-                image: "/assets/anon.jpg",
-                socials: [
-                    {
-                        type: mediaTypes.INSTAGRAM,
-                        link: "https://www.instagram.com/mohamedaalinur/"
-                    }
-                ]
-            },
-        ]
-    },
-    {
-        name: "Creative Director",
-        members: [
-            {
-                firstname: "Tianni",
-                lastname: "Zhao",
-                image: "/assets/anon.jpg",
-                socials: [
-                    {
-                        type: mediaTypes.INSTAGRAM,
-                        link: "https://instagram.com/tiannizhao/"
-                    },
-                ]
-            },
-            {
-                firstname: "Ishleen",
-                lastname: "Wadehra",
-                image: "/assets/anon.jpg",
-                socials: [
-                    {
-                        type: mediaTypes.INSTAGRAM,
-                        link: "https://instagram.com/ishleen_wdh/"
+                        link: "https://instagram.com/sabrinaasingh"
                     }
                 ]
             },
@@ -99,20 +45,9 @@ module.exports.portfolios = [
         name: "Entertainment",
         members: [
             {
-                firstname: "",
-                lastname: "",
-                image: "/assets/anon.jpg",
-                socials: [
-                    {
-                        type: mediaTypes.INSTAGRAM,
-                        link: ""
-                    }
-                ]
-            },
-            {
                 firstname: "Aliyah",
                 lastname: "Yagboyaju",
-                image: "/assets/anon.jpg",
+                image: "/assets/team/Aliyah_Yagboyaju.jpg",
                 socials: [
                     {
                         type: mediaTypes.INSTAGRAM,
@@ -128,7 +63,7 @@ module.exports.portfolios = [
             {
                 firstname: "Yugma",
                 lastname: "Vyas",
-                image: "/assets/anon.jpg",
+                image: "/assets/team/Yugma_Vyas.jpg",
                 socials: [
                     {
                         type: mediaTypes.INSTAGRAM,
@@ -139,11 +74,156 @@ module.exports.portfolios = [
             {
                 firstname: "Abigail",
                 lastname: "Shibu",
-                image: "/assets/anon.jpg",
+                image: "/assets/team/Abigail_Shibu.jpg",
                 socials: [
                     {
                         type: mediaTypes.INSTAGRAM,
                         link: "https://instagram.com/abiigailshibu/"
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        name: "MLD",
+        members: [
+            {
+                firstname: "Naythan",
+                lastname: "Jayamaha",
+                image: "/assets/team/Naythan_Jayamaha.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/naythan.jay/"
+                    }
+                ]
+            },
+            {
+                firstname: "Raj",
+                lastname: "Bhatti",
+                image: "/assets/team/Raj_Bhatti.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "http://instagram.com/rsb.captures"
+                    },
+                    {
+                        type: mediaTypes.TWITTER,
+                        link: "https://twitter.com/rajbhattii"
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        name: "Promo",
+        members: [
+            {
+                firstname: "Ramneet",
+                lastname: "Chahal",
+                image: "/assets/team/Ramneet_Chahal.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/ramneetchahal_"
+                    }
+                ]
+            },
+            {
+                firstname: "Kushi",
+                lastname: "Iyer",
+                image: "/assets/team/Kushi_Iyer.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/kushi.i_"
+                    }
+                ]
+            },
+            {
+                firstname: "Monia",
+                lastname: "Khan",
+                image: "/assets/team/Monia_Khan.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/_mbkphotography"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        name: "Sponsorship",
+        members: [
+            {
+                firstname: "Komal",
+                lastname: "Jambusaria",
+                image: "/assets/team/Komal_Jambusaria.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/komal_j8/"
+                    }
+                ]
+            },
+            {
+                firstname: "Anmol",
+                lastname: "Bal",
+                image: "/assets/team/Anmol_Bal.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/anmol_290/"
+                    }
+                ]
+            },
+            {
+                firstname: "Mohamed",
+                lastname: "Alinur",
+                image: "/assets/team/Mohamed_Alinur.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://www.instagram.com/mohamedaalinur/"
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        name: "Creative Director",
+        members: [
+            {
+                firstname: "Tianni",
+                lastname: "Zhao",
+                image: "/assets/team/Tianni_Zhao.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/tiannizhao/"
+                    },
+                ]
+            },
+            {
+                firstname: "Ishleen",
+                lastname: "Wadehra",
+                image: "/assets/team/Ishleen_Wadehra.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/ishleen_wdh/"
+                    }
+                ]
+            },
+            {
+                firstname: "Zara",
+                lastname: "Ali",
+                image: "/assets/team/Zara_Ali.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/zara_m_ali/"
                     }
                 ]
             },
@@ -155,7 +235,7 @@ module.exports.portfolios = [
             {
                 firstname: "Tanya",
                 lastname: "Puri",
-                image: "/assets/anon.jpg",
+                image: "/assets/team/Tanya_Puri.jpg",
                 socials: [
                     {
                         type: mediaTypes.INSTAGRAM,
@@ -166,7 +246,7 @@ module.exports.portfolios = [
             {
                 firstname: "Neiloy",
                 lastname: "Chaudhuri",
-                image: "/assets/anon.jpg",
+                image: "/assets/team/Neiloy_Chaudhuri.jpg",
                 socials: [
                     {
                         type: mediaTypes.INSTAGRAM,
@@ -177,27 +257,11 @@ module.exports.portfolios = [
             {
                 firstname: "Armaan",
                 lastname: "Gill",
-                image: "/assets/anon.jpg",
+                image: "/assets/team/Armaan_Gill.jpg",
                 socials: [
                     {
                         type: mediaTypes.INSTAGRAM,
                         link: "https://instagram.com/armaan_gill18/"
-                    }
-                ]
-            },
-        ]
-    },
-    {
-        name: "Chair",
-        members: [
-            {
-                firstname: "Rhea",
-                lastname: "Nijjer",
-                image: "/assets/anon.jpg",
-                socials: [
-                    {
-                        type: mediaTypes.INSTAGRAM,
-                        link: "https://instagram.com/rheanijjer/"
                     }
                 ]
             },
@@ -216,7 +280,7 @@ module.exports.portfolios = [
 // {
 //     firstname: "",
 //     lastname: "",
-//     image: "/assets/anon.jpg",
+//     image: "/assets/team/.jpg",
 //     socials: [
 //         {
 //             type: mediaTypes.INSTAGRAM,

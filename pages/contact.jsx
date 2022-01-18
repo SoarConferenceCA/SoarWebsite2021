@@ -30,7 +30,7 @@ export default function Contact() {
                                 {
                                     chairContacts.map( (chair, idx) => (
                                         <div key={idx} className="m-4 group text-gray-600 cursor-text">
-                                            <div className="flex items-center">
+                                            <div className="flex items-center font-int">
                                                 <span style={{width: '24px', height: '24px'}} className="inline-block rounded-full bg-primary-dull"></span>
 
                                                 <span className="mx-4 text-lg">
@@ -74,7 +74,7 @@ export default function Contact() {
                                                 <div className="flex items-center">
                                                     <span style={{width: '24px', height: '24px'}} className="inline-block rounded-full bg-accent group-hover:bg-primary"></span>
 
-                                                    <span className="inline-block align-middle mx-4 text-lg">
+                                                    <span className="inline-block align-middle mx-4 text-lg font-int">
                                                         {href}
                                                     </span>
 
