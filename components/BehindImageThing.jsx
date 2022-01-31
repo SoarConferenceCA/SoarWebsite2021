@@ -1,19 +1,33 @@
-export default function BehindImageThing({ direction, children }) {
+import { useRef, useEffect } from 'react';
+
+export default function BehindImageThing({ direction, background, children, classes='', style={} }) {
+    const s1 = useRef();
+    const s2 = useRef();
+    const s3 = useRef();
+    
+    useEffect( () => {
+        s2.current.style.height = `${s1.current.offsetHeight - 10}px`;
+        s2.current.style.width = `${s1.current.offsetWidth - 10}px`;
+
+        s3.current.style.height = `${s2.current.offsetHeight}px`;
+        s3.current.style.width = `${s2.current.offsetWidth}px`;
+
+        s1.current.addEventListener('resize', (ev) => {
+            s2.current.style.height = `${s1.current.offsetHeight - 10}px`;
+            s2.current.style.width = `${s1.current.offsetWidth - 10}px`;
+
+            s3.current.style.height = `${s2.current.offsetHeight}px`;
+            s3.current.style.width = `${s2.current.offsetWidth}px`;
+        });
+    }, [ s1, s2 ])
+
     return (
-        <div className="w-full h-full px-4 flex md:max-h-h440">
+        <div className={`w-full h-full px-4 flex ${classes}`} style={style} ref={s1}>
             <div className="relative w-full h-full">
-                <div className={`absolute w-10/12 h-2/3 max-h-h320 top-35 ${direction}-0 bg-accent`} />
+                <div className={`absolute ${direction}-0 ${background}`} ref={s3}/>
             </div>
 
-            <div className="relative w-full h-full -ml-100">
-                <svg width="100%" height="100%" viewBox="0 0 441 353" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M-1 97.5L157.5 1L285.5 217L432.5 119" stroke="#8FB5Af"/>
-                    <path d="M0 139L146.5 55L276.5 281L440 159.5" stroke="#DD7766" strokeOpacity="0.6"/>
-                    <path d="M0 180L132.5 103L259.5 352L440 213.5" stroke="#DD7766" strokeOpacity="0.4"/>
-                </svg>
-            </div>
-
-            <div className="relative w-full h-full -ml-100">
+            <div className="relative w-full h-full -ml-100" ref={s2}>
                 {children}
             </div>
         </div>

@@ -1,4 +1,5 @@
 module.exports.links = [
+    { title: 'Home', href: '/' },
     { title: 'Team', href: '/team' },
     { title: 'Gallery', href: '/gallery' },
     { title: 'Sponsors', href: '/sponsors' },

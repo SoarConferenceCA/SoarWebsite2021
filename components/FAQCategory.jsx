@@ -39,43 +39,45 @@ function Answer({ answer }) {
     )
 }
 
-export default function FAQCategory({ category }) {
+export default function FAQCategory({ category, background }) {
     return (
-        <div className="my-20 mx-8">
-            <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="flex w-full">
-                    <div className="z-10 my-4 w-full flex-0">
-                        <div>
-                            <h2 className="text-2xl font-bold">
-                                { category.categoryName }
-                            </h2>
+        <div className={background}>
+            <div className="py-20 mx-8">
+                <div className="grid grid-cols-1 md:grid-cols-2">
+                    <div className="flex w-full">
+                        <div className="z-10 my-4 w-full flex-0">
+                            <div>
+                                <h2 className="text-2xl font-bold">
+                                    { category.categoryName }
+                                </h2>
 
-                            <div className="mt-8 z-10 w-full md:w-110per">
-                                {
-                                    category.questions.map( ({ question, answer}, idx) => (
-                                        <Collapsible
-                                            key={idx}
-                                            trigger={<QuestionTrigger question={question} />}
-                                            triggerWhenOpen={<QuestionTrigger question={question} open={true} />}>
-                                            <Answer answer={answer} />
-                                        </Collapsible>
-                                    ))
-                                }
+                                <div className="mt-8 z-10 w-full md:w-110per">
+                                    {
+                                        category.questions.map( ({ question, answer}, idx) => (
+                                            <Collapsible
+                                                key={idx}
+                                                trigger={<QuestionTrigger question={question} />}
+                                                triggerWhenOpen={<QuestionTrigger question={question} open={true} />}>
+                                                <Answer answer={answer} />
+                                            </Collapsible>
+                                        ))
+                                    }
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="hidden md:block relative w-full -ml-100">
-                        <div style={{width: '25px'}} className="absolute right-0 h-full max-h-ab4 bg-primary rounded-l-lg"></div>
+                        {/* <div className="hidden md:block relative w-full -ml-100">
+                            <div style={{width: '25px'}} className="absolute right-0 h-full max-h-ab4 bg-primary rounded-l-lg"></div>
+                        </div> */}
                     </div>
+                    
+
+                    <div className="hidden md:block w-full h-full">
+                        <div className="relative -ml-8 lg:-ml-12 xl:-ml-16 2xl:-ml-24 flex justify-center w-full h-full">
+                            <img src={category.categoryImage} className="self-center shadow-lg flex-grow-0 max-h-full rounded-lg" style={{height: '500px' }}/>
+                        </div>
+                    </div>                
                 </div>
-                
-
-                <div className="hidden md:block w-full h-full rounded-r-lg pr-8 pl-2 py-4 bg-primary">
-                    <div className="flex justify-center w-full h-full">
-                        <img src={category.categoryImage} className="self-center shadow-lg flex-grow-0 max-w-full max-h-full rounded-lg" />
-                    </div>
-                </div>                
             </div>
         </div>
     )

@@ -16,6 +16,53 @@ module.exports = {
         'primary-no-alpha': '#920019',
         'accent': '#cc975acc',
         'accent-no-alpha': '#cc975a',
+
+        'si-grey': '#414141',
+        'si-maroon': '#611D1D',
+        'si-dyellow': '#DFC156',
+        'si-worange': '#CC975A',
+        'si-beige': '#DFD7CA',
+        'si-lime': '#8CA985',
+        'si-lpink': '#F38282',
+        'si-green': '#284F2A',
+        'si-beiger': '#CCC1B2',
+
+        'si-purple': '#D6DAFF',
+        'si-lpurple': '#E7EFFF',
+        'si-dpurple': '#B6C1D7',
+        'si-dmaroon': '#611D1D',
+
+        'si-lgreen': '#A8BAA1',
+        'si-npurple': '#BDA9C3',
+        'si-pink': '#E38A90',
+        'si-blue': '#BBD3D0',
+        'si-yellow': '#F5DC80',
+
+        'si-myellow': '#EFDD81',
+        'si-dpink': '#DC5F67',
+        'si-cyan': '#C0E1DC',
+        'si-mgreen': '#A5BF9C',
+        'si-bgrey': '#333333',
+
+        'si-tpink': '#EDAFAF',
+
+        'opaquish': '#44434255',
+        'si-oblue': '#002c30',
+      },
+      dropShadow: {
+        'pink-tl': '-15px -15px 1px #F38282',
+        'pink-tr': '15px -15px 0px #F38282',
+        'pink-bl': '-15px 15px 0px #F38282',
+        'pink-br': '15px 15px 0px #F38282',
+        'green-tl': '-15px -15px 0px #234B1F',
+        'green-tr': '15px -15px 0px #234B1F',
+        'green-bl': '-15px 15px 0px #234B1F',
+        'green-br': '15px 15px 0px #234B1F',
+        'black-br': '7px 7px 5px #1e1e1e',
+      },
+      scale: {
+        '170': '1.7',
+        '250': '2.5'
       },
       backgroundImage: {
         'unknown': "url('/assets/unknown.png')",
@@ -38,7 +85,8 @@ module.exports = {
       },
       maxWidth: {
         'w370': '370px',
-        'w280': '280px'
+        'w280': '280px',
+        'w420': '420px',
       },
       maxHeight: {
         'h320': '300px',
@@ -56,6 +104,9 @@ module.exports = {
         spar: [ 'Spartan' ],
         int: [ 'Inter' ],
         libre: [ 'Libre Baskerville' ],
+        tavi: [ 'Taviraj' ],
+        fat: [ 'Abril Fatface', 'Arapey' ],
+        lato: [ 'Lato', 'Spartan' ]
       }
     },
   },

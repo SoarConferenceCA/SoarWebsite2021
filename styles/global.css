@@ -18,6 +18,39 @@ body {
 
     --primary-no-alpha: #920019;
     --accent-no-alpha: #cc975a;
+
+
+
+    --si-grey: #414141;
+    --si-maroon: #611D1D;
+    --si-dyellow: #DFC156;
+    --si-worange: #CC975A;
+    --si-beige: #DFD7CA;
+    --si-lime: #8CA985;
+    --si-lpink: #F38282;
+    --si-green: #284F2A;
+    --si-beiger: #CCC1B2;
+
+    --si-purple: #D6DAFF;
+    --si-lpurple: #E7EFFF;
+    --si-dpurple: #B6C1D7;
+    --si-dmaroon: #611D1D;
+
+    --si-lgreen: A8BAA1;
+    --si-npurple: BDA9C3;
+    --si-pink: #E38A90;
+    --si-blue: #BBD3D0;
+    --si-yellow: #F5DC80;
+
+    --si-myellow: #EFDD81;
+    --si-dpink: #DC5F67;
+    --si-cyan: #C0E1DC;
+    --si-mgreen: #A5BF9C;
+    --si-bgrey: #333333;
+
+
+    --si-dblue: #8FB0A966;
+    --si-dgreen: #AABEA266;
 }
 
 main {
@@ -29,6 +62,82 @@ body {
     width: 100%;
 }
 
+/* Abril Fatface */
+@font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/abrilfatface/v18/zOL64pLDlL1D99S8g8PtiKchq-lmjdLh.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  /* latin */
+@font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/abrilfatface/v18/zOL64pLDlL1D99S8g8PtiKchq-dmjQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Lato */
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v22/S6u8w4BMUTPHjxsAUi-qJCY.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  /* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v22/S6u8w4BMUTPHjxsAXC-q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  /* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh7USSwaPGR_p.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  /* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  /* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  /* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Arapey */
 /* latin */
 @font-face {
     font-family: "Arapey";
@@ -41,6 +150,8 @@ body {
         U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
         U+2215, U+FEFF, U+FFFD;
 }
+
+/* Inter */
 /* cyrillic-ext */
 @font-face {
     font-family: "Inter";
@@ -191,6 +302,8 @@ body {
         U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
         U+2215, U+FEFF, U+FFFD;
 }
+
+/* Libre Baskerville */
 /* latin-ext */
 @font-face {
     font-family: "Libre Baskerville";
@@ -214,6 +327,8 @@ body {
         U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
         U+2215, U+FEFF, U+FFFD;
 }
+
+/* Nunito */
 /* cyrillic-ext */
 @font-face {
     font-family: "Nunito";
@@ -269,6 +384,8 @@ body {
         U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
         U+2215, U+FEFF, U+FFFD;
 }
+
+/* Spartan */
 /* latin-ext */
 @font-face {
     font-family: "Spartan";

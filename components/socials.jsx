@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export const links = [
-    { href: "https://www.facebook.com", icon: faFacebook },
-    { href: "https://www.instagram.com", icon: faInstagram },
-    { href: "https://www.twitter.com", icon: faTwitter },
-    { href: "https://www.youtube.com", icon: faYoutube }
+    { title: "Facebook", href: "https://www.facebook.com/groups/SOARConference/", icon: faFacebook },
+    { title: "Instagram", href: "https://www.instagram.com/_soarconference", icon: faInstagram },
+    { title: "LinkedIn", href: "https://www.linkedin.com/company/soar-leadership-conference", icon: faLinkedin },
+    { title: "YouTube", href: "https://www.youtube.com/watch?v=VAQCjkfGs7M&fbclid=IwAR3y9DM52kXeYFPI7p-EnidiusSYPXeE_Youkmo_bT-QylEkWzcdyMf_YVY", icon: faYoutube }
 ]
 
 const socials = links.map( ({ href, icon }) => ({
@@ -18,15 +18,15 @@ export const soarEmail = 'soar.chairs@gmail.com';
 export const chairContacts = [
     {
         name: 'Sabrina Singh',
-        email: 'some@email.com'
+        email: 'sabrinasingh@hotmail.com'
     },
     {
         name: 'Aashna Jacob',
-        email: 'some@email.com'
+        email: 'aashnajacob@gmail.com'
     },
     {
         name: 'Rhea Nijjer',
-        email: 'some@email.com'
+        email: 'rheanijjer@gmail.com'
     }
 ]
 

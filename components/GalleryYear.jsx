@@ -14,15 +14,15 @@ export default class GalleryYear extends Component {
     render() {
         const { chunkSize, year } = this.props;
         return (
-            <div className="my-12">
+            <div className={`py-12 ${this.props.background}`}>
                 <div className="flex justify-center px-4">
-                    <h3 className="text-2xl text-black font-bold">
+                    <h3 className="text-3xl font-lato text-black font-bold">
                         { `SOAR ${year.year}`}
                     </h3>
                 </div>
                 
                 {
-                    this.state.inBrowser ? <YearCarousel chunkSize={chunkSize} year={year} /> : <LoadingDiv />
+                    this.state.inBrowser ? <YearCarousel chunkSize={chunkSize} year={year} carouselWidth={this.props.carouselWidth}/> : <LoadingDiv />
                 }
             </div>
         )

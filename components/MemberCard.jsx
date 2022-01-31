@@ -31,7 +31,7 @@ export default function MemberCard({ member }) {
                                         member.socials.map( ({ type, link }, idx) => (
                                             <div key={idx} className="p-2">
                                                 <Link href={link}>
-                                                    <a className="text-white hover:text-primary-no-alpha" target="_blank">
+                                                    <a className="block text-white hover:text-primary-no-alpha transform transition duration-200 hover:scale-110" target="_blank">
                                                         {mediaTypeToIcon[type]}
                                                     </a>
                                                 </Link>

@@ -1,0 +1,55 @@
+.cyanRed25 {
+    background: linear-gradient(to right, var(--si-cyan) 25%, var(--si-maroon) 25%);
+}
+
+.cyanRed75 {
+    background: linear-gradient(to right, var(--si-cyan) 75%, var(--si-maroon) 75%);
+}
+
+.pinkCyan75 {
+    background: linear-gradient(to right, var(--si-pink) 75%, var(--si-cyan) 75%);
+}
+
+.pinkCyan25 {
+    background: linear-gradient(to right, var(--si-pink) 25%, var(--si-cyan) 25%);
+}
+
+
+.redGreen75 {
+    background: linear-gradient(to right, var(--si-maroon) 75%, var(--si-green) 75%);
+}
+
+
+
+.redGreen25 {
+    background: linear-gradient(to right, var(--si-maroon) 25%, var(--si-green) 25%);
+}
+
+.redGreen45 {
+    background: linear-gradient(to right, rgb(22, 162, 255) 7%, var(--si-maroon) 7% 55%, var(--si-cyan) 55%);
+}
+
+.blueMaroon {
+    background: linear-gradient(to right, rgb(22, 162, 255) 50%, var(--si-maroon) 50%);
+}
+
+.pinkPurple25 {
+    background: linear-gradient(to right, var(--si-dpink) 25%, var(--si-purple) 25%);
+}
+
+
+.yellowOrange75 {
+    background: linear-gradient(to right, var(--si-beige) 75%, var(--si-worange) 75%);
+}
+
+.yellowOrange25 {
+    background: linear-gradient(to right, var(--si-dyellow) 25%, var(--si-worange) 25%);
+}
+
+.dblueDGreen75 {
+    background: linear-gradient(to right, var(--si-dblue) 75%, var(--si-dgreen) 75%);
+}
+
+.magicOrange {
+    background: linear-gradient(to right, var(--si-pink) 25%, var(--si-cyan) 25% 80%, var(--si-worange) 80%);
+}

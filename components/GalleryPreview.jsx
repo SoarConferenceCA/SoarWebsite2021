@@ -49,7 +49,7 @@ export default function GalleryPreview({ previews }) {
             <div className="flex flex-no-wrap px-4">
                 <div className="self-stretch flex justify-center mr-2">
                     <button
-                            className="text-gray-700 hover:text-primary transform transition duration-200 hover:scale-150"
+                            className="text-black hover:text-primary transform transition duration-200 scale-170 hover:scale-250"
                             onClick={scrollPrev}
                             style={{width: '24px'}}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -61,8 +61,8 @@ export default function GalleryPreview({ previews }) {
                     <div className="flex">
                         {
                             previews.map( (photo, idx) => (
-                                <div key={idx} className="relative flex flex-none w-full mx-10">
-                                    <img src={photo} className="max-w-full max-h-full" />
+                                <div key={idx} className="relative flex flex-none w-full px-10">
+                                    <img src={photo} className="max-w-full max-h-full m-4 filter drop-shadow-black-br" />
                                 </div>
                             ))
                         }
@@ -70,7 +70,7 @@ export default function GalleryPreview({ previews }) {
                 </div>
                 <div className="self-stretch flex justify-center ml-2">
                     <button
-                        className="text-gray-700 hover:text-primary transform transition duration-200 hover:scale-150"
+                        className="text-black hover:text-primary transform transition duration-200 scale-170 hover:scale-250"
                         onClick={scrollNext}
                         style={{width: '24px'}}>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -83,7 +83,7 @@ export default function GalleryPreview({ previews }) {
                 {
                     scrollSnaps.map( (_, idx) => (
                         <button
-                            className={`w-3 h-3 rounded-full ${idx === selectedIndex ? "bg-primary" : "bg-gray-400" }`}
+                            className={`w-3 h-3 rounded-full ${idx === selectedIndex ? "bg-primary" : "bg-si-purple" }`}
                             key={idx}
                             onClick={() => scrollTo(idx)}
                         />

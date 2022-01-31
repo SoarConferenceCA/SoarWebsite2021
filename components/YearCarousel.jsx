@@ -12,7 +12,7 @@ function chunkArray(array, chunkSize) {
     }, [[]]);
 }
 
-export default function YearCarousel({ chunkSize, year }) {
+export default function YearCarousel({ chunkSize, year, carouselWidth='88vw' }) {
     const [ emblaRef, emblaApi ] = useEmblaCarousel({ loop: true, skipSnaps: false });
     const [ selectedIndex, setSelectedIndex ] = useState(0);
     const [ scrollSnaps, setScrollSnaps ] = useState([]);
@@ -47,11 +47,11 @@ export default function YearCarousel({ chunkSize, year }) {
 
     return (
         <>
-            <div className="grid place-items-center">
+            <div className="max-w-full grid place-items-center">
                 <div className="flex flex-nowrap px-4">
                     <div className="self-stretch flex justify-center">
                         <button
-                            className="text-gray-700 hover:text-primary transform transition duration-200 hover:scale-150"
+                            className="mr-4 text-black hover:text-blue-500 transform transition duration-200 hover:scale-250 scale-170"
                             onClick={scrollPrev}
                             style={{width: '24px'}}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -59,7 +59,7 @@ export default function YearCarousel({ chunkSize, year }) {
                             </svg>
                         </button>
                     </div>
-                    <div className="overflow-hidden" ref={emblaRef} style={{width: '88vw'}}>
+                    <div className="overflow-hidden" ref={emblaRef} style={{width: carouselWidth}}>
                         <div className="flex">                        {
                                 chunkArray(year.photos, chunkSize).map( (photos, idx) => (
                                     <div key={idx} className="relative flex flex-none mx-10" style={{width: '88vw'}}>
@@ -71,7 +71,7 @@ export default function YearCarousel({ chunkSize, year }) {
                     </div>
                     <div className="self-stretch flex justify-center">
                         <button
-                            className="text-gray-700 hover:text-primary transform transition duration-200 hover:scale-150"
+                            className="ml-4 text-black hover:text-blue-500 transform transition duration-200 hover:scale-250 scale-170"
                             onClick={scrollNext}
                             style={{width: '24px'}}>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -84,7 +84,7 @@ export default function YearCarousel({ chunkSize, year }) {
                     {
                         scrollSnaps.map( (_, idx) => (
                             <button
-                                className={`w-3 h-3 rounded-full ${idx === selectedIndex ? "bg-primary" : "bg-gray-400" }`}
+                                className={`w-3 h-3 rounded-full ${idx === selectedIndex ? "bg-primary" : "bg-gray-500" }`}
                                 key={idx}
                                 onClick={() => scrollTo(idx)}
                             />

@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import footerStyles from '../styles/footer.module.css'
 
 export default function Footer({ links, socials }) {
     return (
         <footer>
-            <div className="bg-primary-dull text-white p-5 font-serif">
+            <div className="bg-si-beiger text-black p-5 font-serif">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
                     <div className="p-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1">
@@ -14,7 +15,7 @@ export default function Footer({ links, socials }) {
                                         Address
                                     </h5>
                                 </div>
-                                <hr className="w-fu" />
+                                <hr className={footerStyles.blackhr} />
                             </div>
 
                             <div className="mt-2">
@@ -31,7 +32,7 @@ export default function Footer({ links, socials }) {
                                         Office Hours
                                     </h5>
                                 </div>
-                                <hr className="w-full" />
+                                <hr className={footerStyles.blackhr} />
                             </div>
 
                             <div className="mt-2">
@@ -48,7 +49,7 @@ export default function Footer({ links, socials }) {
                             </h5>
                         </div>
 
-                        <hr className="w-full" />
+                        <hr className={footerStyles.blackhr} />
 
                         <div className="mt-2 px-5 flex-auto">
                             <div>
@@ -77,7 +78,7 @@ export default function Footer({ links, socials }) {
                             <h5 className="text-lg font-bold">
                                 Useful Links
                             </h5>
-                            <hr className="w-full" />
+                            <hr className={footerStyles.blackhr} />
                         </div>
 
                         <div className="mt-2 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-1">

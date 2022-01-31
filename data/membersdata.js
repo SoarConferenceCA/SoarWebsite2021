@@ -39,6 +39,17 @@ module.exports.portfolios = [
                     }
                 ]
             },
+            {
+                firstname: "Aashna",
+                lastname: "Jacob",
+                image: "/assets/team/Aashna_Jacob.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://www.instagram.com/_aashna.j/"
+                    }
+                ]
+            }
         ]
     },
     {
@@ -85,6 +96,33 @@ module.exports.portfolios = [
         ]
     },
     {
+        name: "Design and Developers",
+        members: [
+            {
+                firstname: "Kam",
+                lastname: "Singh",
+                image: "/assets/team/Kam_Singh.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/singhkam07"
+                    }
+                ]
+            },
+            {
+                firstname: "Vinaya",
+                lastname: "Sharma",
+                image: "/assets/team/Vinaya_Sharma.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://www.instagram.com/vinaya_sharmaa/"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         name: "MLD",
         members: [
             {
@@ -113,41 +151,14 @@ module.exports.portfolios = [
                     }
                 ]
             },
-        ]
-    },
-    {
-        name: "Promo",
-        members: [
             {
-                firstname: "Ramneet",
-                lastname: "Chahal",
-                image: "/assets/team/Ramneet_Chahal.jpg",
+                firstname: "Aaska",
+                lastname: "Patel",
+                image: "/assets/team/Aaska_Patel.jpg",
                 socials: [
                     {
                         type: mediaTypes.INSTAGRAM,
-                        link: "https://instagram.com/ramneetchahal_"
-                    }
-                ]
-            },
-            {
-                firstname: "Kushi",
-                lastname: "Iyer",
-                image: "/assets/team/Kushi_Iyer.jpg",
-                socials: [
-                    {
-                        type: mediaTypes.INSTAGRAM,
-                        link: "https://instagram.com/kushi.i_"
-                    }
-                ]
-            },
-            {
-                firstname: "Monia",
-                lastname: "Khan",
-                image: "/assets/team/Monia_Khan.jpg",
-                socials: [
-                    {
-                        type: mediaTypes.INSTAGRAM,
-                        link: "https://instagram.com/_mbkphotography"
+                        link: "https://www.instagram.com/_aaskapatel/"
                     }
                 ]
             }
@@ -266,28 +277,57 @@ module.exports.portfolios = [
                 ]
             },
         ]
+    },
+    {
+        name: "Promo",
+        members: [
+            {
+                firstname: "Ramneet",
+                lastname: "Chahal",
+                image: "/assets/team/Ramneet_Chahal.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/ramneetchahal_"
+                    }
+                ]
+            },
+            {
+                firstname: "Kushi",
+                lastname: "Iyer",
+                image: "/assets/team/Kushi_Iyer.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/kushi.i_"
+                    }
+                ]
+            },
+            {
+                firstname: "Monia",
+                lastname: "Khan",
+                image: "/assets/team/Monia_Khan.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/_mbkphotography"
+                    }
+                ]
+            },
+            {
+                firstname: "Prisha",
+                lastname: "Tharwani",
+                image: "/assets/team/Prisha_Tharwani.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://www.instagram.com/prisha.t15/"
+                    }
+                ]
+            }
+        ]
     }
 ];
-
-
-// {
-//     name: "",
-//     members: [
-
-//     ]
-// },
-
-// {
-//     firstname: "",
-//     lastname: "",
-//     image: "/assets/team/.jpg",
-//     socials: [
-//         {
-//             type: mediaTypes.INSTAGRAM,
-//             link: ""
-//         }
-//     ]
-// },
 
 /*
 
