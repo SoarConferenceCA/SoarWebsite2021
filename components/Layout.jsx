@@ -9,6 +9,7 @@ export default function Layout({ Component, pageProps }) {
         <>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="preload" type="image" href="/assets/gold.png" />
             </Head>
 
             <Component {...pageProps} links={links} />

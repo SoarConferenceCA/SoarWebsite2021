@@ -4,7 +4,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-
 export default function BetterTestimonials({ testimonials }) {
     const autoplay = useRef(
         Autoplay({ delay: 4000 })
@@ -43,8 +42,7 @@ export default function BetterTestimonials({ testimonials }) {
     }, [ emblaApi, setScrollSnaps ]);
 
     return (
-        <div className="my-12">
-
+        <div className="">            
             <div className="grid sm:grid-cols-2 place-items-center space-x-4">
                 <h5>
                     <span className="text-3xl text-si-pink font-bold border-b-2 border-si-pink">

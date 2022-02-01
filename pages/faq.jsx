@@ -4,8 +4,7 @@ import NavBar from '../components/NavBar';
 
 let colors = [
     'bg-si-cyan',
-    'bg-si-green',
-    'bg-si-yellow',
+    'bg-si-dpurple',
     'bg-si-lime'
 ];
 
@@ -35,7 +34,7 @@ export default function FAQ({ links }) {
             <div className="">
                 {
                     faqCategories.slice(1).map( (category, idx) => (
-                        <FAQCategory key={idx} category={category} background={randomColor()} />
+                        <FAQCategory key={idx} category={category} background={colors[idx]} />
                     ))
                 }
             </div>

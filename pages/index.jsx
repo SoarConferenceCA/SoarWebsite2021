@@ -5,67 +5,76 @@ import { preview } from "../data/gallerydata";
 import { testimonials } from '../data/testimonials';
 import BetterTestimonials from '../components/BetterTestimonials';
 import NavBar from '../components/NavBar';
+import Head from 'next/head';
+import gold from '../styles/gold.module.css';
+
 
 export default function Index({ links }) {
     const mainBlock = (
-        <div className={`w-full h-full bg-si-dyellow ${indexStyles.redYellow}`}>
-            <div className="mt-4 md:mt-0">
-                <div className="bg-superfun bg-center bg-cover">
-                    <div className="w-full h-full bg-opaquish">
-                        <div className="px-3 sm:px-8 lg:px-20 text-white h-full grid place-items-start">
-                            <div className="py-20 h-full grid grid-cols-1 place-content-between">
-                                <div>
-                                    <div className="text-8xl font-bold font-fat">
-                                        <h1>SOAR</h1>
-                                        <h1>Conference 2022</h1>
-                                    </div>
-                                    <h4 className="mt-2 text-3xl font-bold font-nun">
-                                        Inspiring the leaders of tomorrow
-                                    </h4>
-                                </div>
-                                <div className="mt-8 grid-cols-2 text-md">
-                                    <Link href="/apply">
-                                        <button className="mt-2 mr-2 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-primary bg-red-50 hover:bg-red-100 text-primary font-bold">
-                                            Register for SOAR 2022
-                                        </button>
-                                    </Link>
+        <>
+            <Head>
+                <link rel="preload" type="image" href="/assets/previews/2019_picture_16.jpg" />
+            </Head>
 
-                                    <Link href="/apply">
-                                        <button className="mt-2 sm:ml-4 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-primary bg-red-50 hover:bg-red-100 text-primary font-bold">
-                                            Volunteer
-                                        </button>
-                                    </Link>
+            <div className={`w-full h-full ${indexStyles.redYellow}`}>
+                <div className="mt-4 md:mt-0">
+                    <div className="bg-superfun bg-center bg-cover">
+                        <div className="w-full h-full bg-opaquish">
+                            <div className="px-3 sm:px-8 lg:px-20 text-white h-full grid place-items-start">
+                                <div className="py-20 h-full grid grid-cols-1 place-content-between">
+                                    <div>
+                                        <div className="text-6xl sm:text-8xl font-bold font-fat">
+                                            <h1>SOAR</h1>
+                                            <h1>Conference 2022</h1>
+                                        </div>
+                                        <h4 className="mt-2 text-2xl font-bold font-nun">
+                                            Inspiring the leaders of tomorrow
+                                        </h4>
+                                    </div>
+                                    <div className="mt-8 grid-cols-2 text-md">
+                                        <Link href="/apply">
+                                            <button className="mt-2 mr-2 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-primary bg-red-50 hover:bg-red-100 text-primary font-bold">
+                                                Register for SOAR 2022
+                                            </button>
+                                        </Link>
+
+                                        <Link href="/apply">
+                                            <button className="mt-2 sm:ml-4 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-primary bg-red-50 hover:bg-red-100 text-primary font-bold">
+                                                Volunteer
+                                            </button>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="">
-                <div className="m-6 p-7 bg-si-worange rounded-md shadow-md">
-                    <div className="px-4 grid grid-cols-1 md:grid-cols-2 space-x-2">
-                        <div className="py-16">
-                            <h2 className="text-2xl font-ara">
-                                What is SOAR?
-                            </h2>
+                <div className="">
+                    <div className="m-6 p-7 bg-si-worange rounded-md shadow-md">
+                        <div className="px-4 grid grid-cols-1 md:grid-cols-2 space-x-2">
+                            <div className="py-16">
+                                <h2 className="text-2xl font-ara">
+                                    What is SOAR?
+                                </h2>
 
-                            <p className="mt-3 font-light text-md font-lato">
-                                The SOAR Conference aims to ease students’
-                                transitions from middle school to high school
-                                through various workshops and activities.
-                                We equip students with the necessary skills
-                                to succeed in high school, developing their
-                                collaboration skills and leadership ability and
-                                ultimately instilling in them a sense of optimism
-                                and confidence about high school.
-                            </p>
+                                <p className="mt-3 font-light text-md font-lato">
+                                    The SOAR Conference aims to ease students’
+                                    transitions from middle school to high school
+                                    through various workshops and activities.
+                                    We equip students with the necessary skills
+                                    to succeed in high school, developing their
+                                    collaboration skills and leadership ability and
+                                    ultimately instilling in them a sense of optimism
+                                    and confidence about high school.
+                                </p>
+                            </div>
+
+                            <img className="min-h-320 w-full h-full" src="/assets/previews/2019_picture_7.jpg" />
                         </div>
-
-                        <img className="min-h-320 w-full h-full" src="/assets/previews/2019_picture_7.jpg" />
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 
     return (
@@ -76,10 +85,11 @@ export default function Index({ links }) {
 
             <main className="">
 
-                <div className={`w-full h-full ${indexStyles.beigeGreen}`}>
-                    <div className="w-full py-16 flex justify-center">
+                <div className={`w-full h-full pt-12 ${indexStyles.beigeGreen}`}>
+                    <div className={`${gold.goldFoil} w-1/2`} />
+                    <div className="w-full py-4 flex justify-center">
                         <div className="grid grid-cols-1 md:grid-cols-2">
-                            <div className="mt-20">
+                            <div className="mt-12 md:mt-20">
                                 <div className="grid place-items-center space-y-2">
                                     <h2 className="font-bold text-black text-4xl font-int">
                                         The SOAR Gallery
@@ -90,6 +100,10 @@ export default function Index({ links }) {
                                             View All Photos
                                         </Link>
                                     </button>
+                                </div>
+
+                                <div className="mt-16 md:mt-28 w-100vw">
+                                    <div className={`ml-auto w-3/4vw ${gold.goldFoil}`}></div>
                                 </div>
                             </div>
 
@@ -117,12 +131,17 @@ export default function Index({ links }) {
                                 </div>
                             </div>
 
-                            <div className="px-8 xl:pl-12 xl:pr-8 h-full bg-si-oblue">
-                                <BetterTestimonials testimonials={testimonials} />
+                            <div className="h-full bg-si-oblue pt-8">
+                                <div className={`ml-auto w-3/4 ${gold.goldFoil}`} />
+                                <div className="mt-8 mb-8 px-8 xl:pl-12 xl:pr-8 h-full">
+                                    <BetterTestimonials testimonials={testimonials} />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div className={`${gold.goldFoil}`} />
 
                 <div className="w-full bg-si-dpurple">
 
@@ -170,8 +189,9 @@ export default function Index({ links }) {
                             </div>
                         </div>
                     </div>
-                </div>
 
+                    <div className={`${gold.goldFoil}`} />
+                </div>
             </main>
         </div>
     );

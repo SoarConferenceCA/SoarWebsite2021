@@ -60,6 +60,7 @@ main {
 body {
     background-color: var(--weird-gray);
     width: 100%;
+    overflow-x: hidden;
 }
 
 /* Abril Fatface */

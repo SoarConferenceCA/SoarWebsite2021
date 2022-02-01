@@ -20,7 +20,7 @@ export default function Team({ links }) {
         <div>
             <NavBar links={links}>
                 <div className="w-full h-full bg-si-beige flex flex-col">
-                    <div className="pt-16 w-full grid grid-cols-1 place-items-center">
+                    <div className="mb-20 pt-16 w-full grid grid-cols-1 place-items-center">
                         <h1 className="text-6xl font-fat">
                             Meet The Team!
                         </h1>
@@ -28,7 +28,7 @@ export default function Team({ links }) {
                             Meet the faces behind the organization, and don't hesitate to reach out to any of us!
                         </p>
                     </div>
-                    <Portfolio portfolio={portfolios[0]} background={grads.cyanRed75} classes="mt-8 pb-8 flex-1" />
+                    <Portfolio pullup="-mt-6" portfolio={portfolios[0]} background={grads.cyanRed75} classes="mt-8 pb-8 flex-1" />
                 </div>
             </NavBar>
 
@@ -41,7 +41,7 @@ export default function Team({ links }) {
                                     key={idx}
                                     portfolio={portfolio}
                                     background={colors[idx]}
-                                    pullup="-mt-12" />
+                                    pullup="-mt-16" />
                             )
                         )
                     }

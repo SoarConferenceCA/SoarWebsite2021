@@ -30,7 +30,7 @@ export default class Gallery extends Component {
 
         let colors = [
             grads.cyanRed75,
-            grads.yellowOrange25,
+            grads.redLime25,
         ];
 
         return (
@@ -49,7 +49,7 @@ export default class Gallery extends Component {
                         </div>
 
                         <div className={`mt-12 py-2 ${grads.pinkPurple25}`}>
-                            <GalleryYear chunkSize={this.state.chunkSize} year={galleryData[0]} carouselWidth={this.state.topSize}/>
+                            <GalleryYear left={false} chunkSize={this.state.chunkSize} year={galleryData[0]} carouselWidth={this.state.topSize}/>
                         </div>
                     </div>
                 </NavBar>
@@ -57,7 +57,7 @@ export default class Gallery extends Component {
     
                 <div className="">
                     {
-                        galleryData.slice(1).map( (year, idx) => <GalleryYear key={idx} background={colors[idx]} chunkSize={this.state.chunkSize} year={year} carouselWidth="84vw" /> )
+                        galleryData.slice(1).map( (year, idx) => <GalleryYear left={idx % 2 == 0} key={idx} background={colors[idx]} chunkSize={this.state.chunkSize} year={year} carouselWidth="84vw" /> )
                     }
                 </div>
     

@@ -1,8 +1,10 @@
 import Collapsible from "react-collapsible"
+import gold from '../styles/gold.module.css';
 
-function QuestionTrigger({ question, open }) {
+
+function QuestionTrigger({ question, open, rounded='' }) {
     return (
-        <div className="group bg-white w-full flex items-center py-4 px-2">
+        <div className={`group bg-white w-full flex items-center py-4 px-2 ${rounded}`}>
             <span style={{width: '24px', height: '24px'}} className="inline-block rounded-full bg-accent group-hover:bg-primary"></span>
 
             <span className="ml-2 text-lg text-gray-600 group-hover:text-primary">
@@ -56,8 +58,21 @@ export default function FAQCategory({ category, background }) {
                                         category.questions.map( ({ question, answer}, idx) => (
                                             <Collapsible
                                                 key={idx}
-                                                trigger={<QuestionTrigger question={question} />}
-                                                triggerWhenOpen={<QuestionTrigger question={question} open={true} />}>
+                                                trigger={<QuestionTrigger
+                                                            question={question}
+                                                            rounded={ 
+                                                                idx == 0 ? 'rounded-t-lg' 
+                                                                : (idx === category.questions.length - 1 ? 'rounded-b-lg' : '' )}
+                                                            />
+                                                        }
+                                                triggerWhenOpen={<QuestionTrigger
+                                                    question={question}
+                                                    open={true}
+                                                    rounded={ 
+                                                        idx == 0 ? 'rounded-t-lg' 
+                                                        : (idx === category.questions.length - 1 ? 'rounded-b-lg' : '' )}
+                                                    />
+                                                }>
                                                 <Answer answer={answer} />
                                             </Collapsible>
                                         ))
@@ -79,6 +94,7 @@ export default function FAQCategory({ category, background }) {
                     </div>                
                 </div>
             </div>
+            <div className={`${gold.goldFoil}`} />
         </div>
     )
 }
