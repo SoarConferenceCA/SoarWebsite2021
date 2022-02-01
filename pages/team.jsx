@@ -28,7 +28,7 @@ export default function Team({ links }) {
                             Meet the faces behind the organization, and don't hesitate to reach out to any of us!
                         </p>
                     </div>
-                    <Portfolio pullup="-mt-6" portfolio={portfolios[0]} background={grads.cyanRed75} classes="mt-8 pb-8 flex-1" />
+                    <Portfolio pullup="-mt-6" portfolio={portfolios[0]} background={grads.cyanRed75} classes="mt-8 pb-8 flex-grow" />
                 </div>
             </NavBar>
 
