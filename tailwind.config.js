@@ -1,10 +1,15 @@
 const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      'xs': '375px',
+      ...defaultTheme.screens,
+    },
     extend: {
       colors: {
         'pale-pink': '#dd7766',
@@ -77,12 +82,19 @@ module.exports = {
         '3/4vw': '75vw',
         '1/4vw': '25vw',
         '1/2vw': '50vw',
+        '97vw': '97vw',
+        '98vw': '98vw',
+        '95vw': '95vw',
+        '80vw': '80vw',
+        '960': '960px',
       },
       height: {
         'ab10': '480px',
         'ab4': '360px',
         'lb4': 'auto',
-        '320': '320px'
+        '320': '320px',
+        '100vh': '100vh',
+        '95vh': '95vh',
       },
       margin: {
         '-100': '-100%'
