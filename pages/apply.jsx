@@ -22,7 +22,7 @@ export default function Apply({ links }) {
                         ) : <></>
                     }
                     <div className="mx-auto w-95vw md:w-3/4vw lg:w-3/4vw xl:w-960px h-95vh">
-                        <iframe onLoad={whenLoadedCallback} className="w-full h-full" src="https://drive.google.com/file/d/1BlCqn1LongaqDBPCkl061_1tcDq4Rt2L/preview" />
+                        <iframe onLoad={whenLoadedCallback} className="w-full h-full" src="https://drive.google.com/file/d/1f-kdLzTrjCVYPho-rONvY8mLV4M8xSzH/preview" />
                     </div>
                 </div>
             </NavBar>
