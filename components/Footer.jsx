@@ -7,7 +7,7 @@ export default function Footer({ links, socials }) {
             <div className="bg-si-beiger text-black p-5 font-serif">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-                    <div className="p-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1">
+                    <div className="p-3 grid">
                         <div className="p-3 h-full">
                             <div className="w-full">
                                 <div className="w-full grid place-items-center">
@@ -24,22 +24,6 @@ export default function Footer({ links, socials }) {
                                 <p>L6W 0A2, Canada</p>
                             </div>
                         </div>
-                        
-                        <div className="p-3 h-full">
-                            <div className="w-full">
-                                <div className="w-full grid place-items-center">
-                                    <h5 className="text-lg font-bold">
-                                        Office Hours
-                                    </h5>
-                                </div>
-                                <hr className={footerStyles.blackhr} />
-                            </div>
-
-                            <div className="mt-2">
-                                <p>Monday - Sunday</p>
-                                <p>10:00 - 18:00</p>
-                            </div>
-                        </div>
                     </div>
 
                     <div className="p-6 h-full">
@@ -53,9 +37,8 @@ export default function Footer({ links, socials }) {
 
                         <div className="mt-2 px-5 flex-auto">
                             <div>
-                                <div className="flex justify-between flex-wrap">
-                                    <p>Phone</p>
-                                    <p>022-202-7564</p>
+                                <div className="flex justify-center my-4 text-lg flex-wrap">
+                                    <p>soar.chairs@gmail.com</p>
                                 </div>
 
                                 <div className="flex justify-center">
