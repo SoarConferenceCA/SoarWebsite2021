@@ -123,48 +123,6 @@ module.exports.portfolios = [
         ]
     },
     {
-        name: "MLD",
-        members: [
-            {
-                firstname: "Naythan",
-                lastname: "Jayamaha",
-                image: "/assets/team/Naythan_Jayamaha.jpg",
-                socials: [
-                    {
-                        type: mediaTypes.INSTAGRAM,
-                        link: "https://instagram.com/naythan.jay/"
-                    }
-                ]
-            },
-            {
-                firstname: "Raj",
-                lastname: "Bhatti",
-                image: "/assets/team/Raj_Bhatti.jpg",
-                socials: [
-                    {
-                        type: mediaTypes.INSTAGRAM,
-                        link: "http://instagram.com/rsb.captures"
-                    },
-                    {
-                        type: mediaTypes.TWITTER,
-                        link: "https://twitter.com/rajbhattii"
-                    }
-                ]
-            },
-            {
-                firstname: "Aaska",
-                lastname: "Patel",
-                image: "/assets/team/Aaska_Patel.jpg",
-                socials: [
-                    {
-                        type: mediaTypes.INSTAGRAM,
-                        link: "https://www.instagram.com/_aaskapatel/"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         name: "Sponsorship",
         members: [
             {
@@ -276,6 +234,59 @@ module.exports.portfolios = [
                     }
                 ]
             },
+        ]
+    },
+    {
+        name: "MLD",
+        members: [
+            {
+                firstname: "Naythan",
+                lastname: "Jayamaha",
+                image: "/assets/team/Naythan_Jayamaha.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://instagram.com/naythan.jay/"
+                    }
+                ]
+            },
+            {
+                firstname: "Raj",
+                lastname: "Bhatti",
+                image: "/assets/team/Raj_Bhatti.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "http://instagram.com/rsb.captures"
+                    },
+                    {
+                        type: mediaTypes.TWITTER,
+                        link: "https://twitter.com/rajbhattii"
+                    }
+                ]
+            },
+            {
+                firstname: "Aaska",
+                lastname: "Patel",
+                image: "/assets/team/Aaska_Patel.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://www.instagram.com/_aaskapatel/"
+                    }
+                ]
+            },
+            {
+                firstname: "Liza",
+                lastname: "Mehta",
+                image: "/assets/team/Liza_Mehta.jpg",
+                socials: [
+                    {
+                        type: mediaTypes.INSTAGRAM,
+                        link: "https://www.instagram.com/liza.mehta25/"
+                    }
+                ]
+            }
         ]
     },
     {
