@@ -38,11 +38,13 @@ export default function Index({ links }) {
                                             </button>
                                         </Link>
 
-                                        <Link href="/apply">
+                                        <a
+                                            target="_blank"
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLSehAaWyc6_pBtn8p1UN23st003eMOB4b1Ki9E8W4cFl2qusgw/viewform?fbclid=IwAR2M16v7DbBNh5xB4H9GzS0sMASLWC5-FWUmd5QQeyx3CRUK76WCFwmmlNI">
                                             <button className="mt-2 sm:ml-4 px-2 sm:px-4 py-2 sm:py-3 rounded border-2 border-primary bg-red-50 hover:bg-red-100 text-primary font-bold">
                                                 Volunteer
                                             </button>
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
