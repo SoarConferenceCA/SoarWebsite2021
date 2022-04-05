@@ -20,6 +20,8 @@ class NavBar extends Component {
     }
 
     render() {
+        let currentRoute = this.props.overriddenRoute || this.props.router.route;
+
         return (
             <>
                 <div className="block md:flex">
@@ -42,7 +44,7 @@ class NavBar extends Component {
                                     {
                                         this.props.links.map( ({ title, href }, idx) => (
                                             <Link key={idx} href={href}>
-                                                <a className={`block w-full text-center cursor-pointer px-3 py-2 border-2 hover:text-${highlightColour} hover:border-${highlightColour} ${this.props.router.route === href ? 'border-2 hover:border-gray-900' : 'border-transparent hover:border-2'}`}>
+                                                <a className={`block w-full text-center cursor-pointer px-3 py-2 border-2 hover:text-${highlightColour} hover:border-${highlightColour} ${currentRoute === href ? 'border-2 hover:border-gray-900' : 'border-transparent hover:border-2'}`}>
                                                     {title}
                                                 </a>
                                             </Link>
@@ -67,7 +69,7 @@ class NavBar extends Component {
                                 {
                                     this.props.links.map( ({ title, href }, idx) => (
                                         <Link key={idx} href={href}>
-                                            <a onClick={this.toggleDropDown} className={`block my-1 font-bold pl-3 py-3 rounded w-full hover:text-gray-50 hover:bg-gray-900 ${ this.props.router.route === href ? 'bg-green-50 text-gray-900' : 'text-gray-50' }`}>
+                                            <a onClick={this.toggleDropDown} className={`block my-1 font-bold pl-3 py-3 rounded w-full hover:text-gray-50 hover:bg-gray-900 ${ currentRoute === href ? 'bg-green-50 text-gray-900' : 'text-gray-50' }`}>
                                                 {title}
                                             </a>
                                         </Link>
