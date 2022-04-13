@@ -7,7 +7,6 @@ import BetterTestimonials from '../components/BetterTestimonials';
 import NavBar from '../components/NavBar';
 import Head from 'next/head';
 import gold from '../styles/gold.module.css';
-import { DelegateTestimonials } from '../components/DelegateTestimonials';
 
 
 export default function Index({ links }) {
@@ -47,39 +46,18 @@ export default function Index({ links }) {
                                     </div>
                                 </div>
                             </div>
-
-                            <div className="grid place-items-center pt-4 pb-8">
-                                <div className="mb-4">
-                                    <h3 className="text-center text-4xl font-fat text-white">
-                                        Hear from our past delegates on their SOAR experiences!
-                                    </h3>
-                                </div>
-                                <DelegateTestimonials />
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </>
-    );
-
-    return (
-        <div>
-            <NavBar links={links}>
-                { mainBlock }
-            </NavBar>
-
-            <main className="">
-
-                <div className={`p-6 ${indexStyles.yellowRed}`}>
-                    <div className="p-7 bg-si-worange rounded-md shadow-md">
+                <div className="">
+                    <div className="m-6 p-7 bg-si-worange rounded-md shadow-md">
                         <div className="px-4 grid grid-cols-1 md:grid-cols-2 space-x-2">
                             <div className="py-16">
-                                <h2 className="text-2xl font-ara underline">
+                                <h2 className="text-2xl font-ara">
                                     What is SOAR?
                                 </h2>
 
-                                <p className="mt-3 font-light text-lg font-lato">
+                                <p className="mt-3 font-light text-md font-lato">
                                     The SOAR Conference aims to ease students’
                                     transitions from middle school to high school
                                     through various workshops and activities.
@@ -95,6 +73,17 @@ export default function Index({ links }) {
                         </div>
                     </div>
                 </div>
+            </div>
+        </>
+    );
+
+    return (
+        <div>
+            <NavBar links={links}>
+                { mainBlock }
+            </NavBar>
+
+            <main className="">
 
                 <div className={`w-full h-full pt-12 ${indexStyles.beigeGreen}`}>
                     <div className={`${gold.goldFoil} w-1/2`} />
@@ -122,7 +111,16 @@ export default function Index({ links }) {
                         </div>
                     </div>
                 </div>
+
+{/* 
+                <div className="grid grid-cols-2">
+                    <div className={`${indexStyles.greenBlueDiaGradient}`} style={{ height: "10px" }} />
+
+                    <div className={`${indexStyles.greenBlueTopGradient}`} style={{ height: "10px" }} />
+                </div> */}
+
                 
+
                 <div className={`w-full bg-si-green`}>
                     
                     <div className="my-18">
