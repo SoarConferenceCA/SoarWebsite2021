@@ -13,6 +13,10 @@
     background: linear-gradient(to right, var(--si-maroon), var(--si-maroon) 70%, var(--si-dyellow) 70%);
 }
 
+.yellowRed {
+    background: linear-gradient(to left, var(--si-maroon), var(--si-maroon) 70%, var(--si-dyellow) 70%);
+}
+
 .beigeGreen {
     background: linear-gradient(to bottom, var(--si-beige), var(--si-beige) 60%, var(--si-green) 60%);
 }

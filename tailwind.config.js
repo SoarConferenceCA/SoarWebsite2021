@@ -8,6 +8,8 @@ module.exports = {
   theme: {
     screens: {
       'xs': '375px',
+      'js': '535px',
+      'ys': '840px',
       ...defaultTheme.screens,
     },
     extend: {
@@ -87,6 +89,7 @@ module.exports = {
         '95vw': '95vw',
         '80vw': '80vw',
         '960': '960px',
+        '1000': '1000px'
       },
       height: {
         'ab10': '480px',
@@ -95,7 +98,8 @@ module.exports = {
         '320': '320px',
         '100vh': '100vh',
         '95vh': '95vh',
-        '75vh': '75vh'
+        '75vh': '75vh',
+        '565': '565px'
       },
       margin: {
         '-100': '-100%'
@@ -104,10 +108,13 @@ module.exports = {
         'w370': '370px',
         'w280': '280px',
         'w420': '420px',
+        'w1000': '1000px',
+        "w80": "80%"
       },
       maxHeight: {
         'h320': '300px',
-        'h440': '500px'
+        'h440': '500px',
+        '75vh': '75vh'
       },
       inset: {
         '35': '35px'
