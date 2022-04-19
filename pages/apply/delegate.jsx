@@ -30,10 +30,17 @@ export default function DelegateApplication({ links }) {
                 </div>
 
                 <div className="p-8 flex justify-center">
+                    <h1 className="text-4xl">
+                        Deadline extended to April 23 @ 11:59pm
+                    </h1>
+                </div>
+
+                <div className="p-8 flex justify-center">
+
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfiNXokOAKsMmOj9NwithDAgbExz9NAufsLXiKOMstRUhITzA/viewform?fbclid=IwAR33Z71QC8eRnzfgxAzfNGUfEG-fY5lujbY5l9dFDO1myDsy-vytUVseuw4"
                         target="_blank">
-                        <h1 className="underline text-primary hover:text-si-green transform transition duration-100 hover:scale-110 text-4xl font-nuno font-fat">
+                        <h1 className="underline text-primary hover:text-si-green transform transition duration-100 hover:scale-110 text-3xl font-nuno font-fat">
                             Fill out the Delegate application here!
                         </h1>
                     </a>
