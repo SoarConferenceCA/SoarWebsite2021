@@ -59,7 +59,7 @@ export default function DelegateApplication({ links }) {
                         <iframe 
                             onLoad={whenLoadedCallback}
                             className="w-full h-full"
-                            src="https://drive.google.com/file/d/1opN81mEZ-Xk0-l9sJW_gzD1ZK4-IehcI/preview" 
+                            src="https://drive.google.com/file/d/1zEPVTUZlFpPr-Oto8znI4ME0JKmFPjj8/preview" 
                             />
                     </div>
                 </div>
