@@ -38,7 +38,7 @@ export default function DelegateApplication({ links }) {
                 <div className="p-8 flex justify-center">
 
                     <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfiNXokOAKsMmOj9NwithDAgbExz9NAufsLXiKOMstRUhITzA/viewform?fbclid=IwAR33Z71QC8eRnzfgxAzfNGUfEG-fY5lujbY5l9dFDO1myDsy-vytUVseuw4"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdM1DndK491zDiMvCjjbGN4MS2u26Dv7FSIB2V09r59YDOIyA/viewform?fbclid=IwAR1pGSiW19m4nIS7xDYNcBA9SNwWdMTB66sH78C6WOprwFvBckLq02pi9j0"
                         target="_blank">
                         <h1 className="underline text-primary hover:text-si-green transform transition duration-100 hover:scale-110 text-3xl font-nuno font-fat">
                             Fill out the Delegate application here!
