@@ -31,7 +31,7 @@ export default function DelegateApplication({ links }) {
 
                 <div className="p-8 flex justify-center">
                     <h1 className="text-4xl">
-                        Deadline extended to April 23 @ 11:59pm
+                        Deadline extended to June 2nd @ 11:59 pm
                     </h1>
                 </div>
 
@@ -46,23 +46,6 @@ export default function DelegateApplication({ links }) {
                     </a>
                 </div>
 
-                <div className="my-4 w-full h-100vh grid place-items center">
-                    { 
-                        isLoading ? (
-                            <div className="bg-beige mx-auto w-3/4vw h-100vh">
-                                <LoadingDiv />
-                            </div>
-                        ) : <></>
-                    }
-
-                    <div className="mx-auto w-95vw md:w-3/4vw lg:w-3/4vw xl:w-960px h-95vh">
-                        <iframe 
-                            onLoad={whenLoadedCallback}
-                            className="w-full h-full"
-                            src="https://drive.google.com/file/d/1zEPVTUZlFpPr-Oto8znI4ME0JKmFPjj8/preview" 
-                            />
-                    </div>
-                </div>
             </NavBar>
         </div>
     )
